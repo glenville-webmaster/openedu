@@ -1,0 +1,4 @@
+services:
+  openedu_subtheme.visibility:
+    class: Drupal\openedu_subtheme\SubthemeVisibilityService
+    arguments: ['@path.matcher', '@path.current', '@path.alias_manager']

@@ -1,0 +1,19 @@
+<?php
+
+/**
+ * @file
+ * Install, update and uninstall functions for the openedu_subtheme module.
+ */
+
+use Drupal\Core\Database\Database;
+
+/**
+ * Change type of custom_css field.
+ */
+function openedu_subtheme_update_8001() {
+  $schema = Database::getConnection()->schema();
+  $schema->changeField('subtheme_entity', 'custom_css', 'custom_css', [
+    'type' => 'text',
+    'size' => 'big',
+  ]);
+}

@@ -1,0 +1,5 @@
+entity.subtheme_entity.add_form:
+  route_name: entity.subtheme_entity.add_form
+  title: 'Add Subtheme Entity'
+  appears_on:
+    - entity.subtheme_entity.collection

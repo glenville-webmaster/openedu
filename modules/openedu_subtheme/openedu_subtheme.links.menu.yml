@@ -1,0 +1,8 @@
+
+# Subtheme Entity menu items definition
+entity.subtheme_entity.collection:
+  title: 'Subtheme Entity list'
+  route_name: entity.subtheme_entity.collection
+  description: 'List Subtheme Entity entities'
+  parent: system.admin_structure
+  weight: 100

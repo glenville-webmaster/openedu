@@ -1,0 +1,510 @@
+:root {
+  --blue: #007bff;
+  --indigo: #6610f2;
+  --purple: #6f42c1;
+  --pink: #e83e8c;
+  --red: #dc3545;
+  --orange: #fd7e14;
+  --yellow: #ffc107;
+  --green: #28a745;
+  --teal: #20c997;
+  --cyan: #17a2b8;
+  --white: #fff;
+  --gray: #6c757d;
+  --gray-dark: #343a40;
+  --primary: #024b77;
+  --secondary: #6c757d;
+  --success: #28a745;
+  --info: #ea772e;
+  --warning: #ffc107;
+  --danger: #dc3545;
+  --light: #f8f9fa;
+  --dark: #343a40;
+  --breakpoint-xs: 0;
+  --breakpoint-sm: 576px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 992px;
+  --breakpoint-xl: 1200px;
+  --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+body a {
+  color: #ea772e;
+}
+body .btn-info {
+  background-color: #ea772e;
+  border-color: #ea772e;
+}
+body .btn-primary {
+  background-color: #024b77;
+  border-color: #024b77;
+}
+body .btn-info.disabled, body .btn-info:disabled {
+  background-color: #ea772e;
+  border-color: #ea772e;
+}
+body .btn-outline-info {
+  color: #ea772e;
+  border-color: #ea772e;
+}
+body .btn-outline-info:hover {
+  background-color: #ea772e;
+  border-color: #ea772e;
+}
+body .btn-outline-info.disabled, body .btn-outline-info:disabled {
+  color: #ea772e;
+  background-color: transparent;
+}
+body .btn-outline-info:not(:disabled):not(.disabled):active, body .btn-outline-info:not(:disabled):not(.disabled).active,
+body .show > .btn-outline-info.dropdown-toggle {
+  background-color: #ea772e;
+  border-color: #ea772e;
+}
+body .btn-link {
+  color: #ea772e;
+}
+body .page-link {
+  color: #ea772e;
+}
+body .badge-info {
+  background-color: #ea772e;
+}
+body .bg-info {
+  background-color: #ea772e !important;
+}
+body .border-info {
+  border-color: #ea772e !important;
+}
+body .text-info {
+  color: #ea772e !important;
+}
+body .carousel .gallery-cell article .view-item-container .view-item:hover {
+  background-color: #ea772e;
+}
+body .carousel .flickity-prev-next-button:hover {
+  background: #ea772e;
+}
+body .facet-item a.is-active:after {
+  background-color: #ea772e;
+}
+body .btn-callout {
+  background-color: #ea772e;
+  border-color: #ea772e;
+}
+body .btn-callout:hover {
+  background-color: #ea772e;
+}
+body .btn-callout.disabled, body .btn-callout:disabled {
+  background-color: #ea772e;
+  border-color: #ea772e;
+}
+body figcaption {
+  border-top: 2px solid #ea772e;
+}
+body .pagination .pager__item.pager__item--previous a,
+body .pagination .pager__item.pager__item--next a {
+  color: #ea772e;
+}
+body .page-node-type-program .block-entity-fieldnodefield-programs-course-link .field--name-field-programs-course-link a {
+  background: #ea772e;
+  background: linear-gradient(60deg, #ea772e 65%, rgba(234, 119, 46, 0.8) 54%);
+}
+body .search-result:hover:after {
+  background-color: #ea772e;
+}
+body .search-result h2 a:hover, body .search-result .region-container .block-region-middle .block .field--label:first-of-type a:hover, body .region-container .block-region-middle .block .search-result .field--label:first-of-type a:hover, body .search-result .region-container .block-region-left .block .field--label:first-of-type a:hover,
+body .region-container .block-region-left .block .search-result .field--label:first-of-type a:hover, body .search-result .block-entity-fieldnodefield-program-faculty .block-title a:hover, body .block-entity-fieldnodefield-program-faculty .search-result .block-title a:hover, body .search-result .block--profile-block .block-title a:hover,
+body .block--profile-block .search-result .block-title a:hover, body .search-result .block--openedu-grid-block .field--name-field-grid-label a:hover, body .block--openedu-grid-block .search-result .field--name-field-grid-label a:hover, body .search-result .block-entity-fieldnodefield-program-grid-block .field--name-field-grid-label a:hover,
+body .block-entity-fieldnodefield-program-grid-block .search-result .field--name-field-grid-label a:hover, body .search-result .block--openedu-stories-block .field--name-field-stories-title a:hover, body .block--openedu-stories-block .search-result .field--name-field-stories-title a:hover, body .search-result .block-entity-fieldnodefield-program-stories-block .field--name-field-stories-title a:hover, body .block-entity-fieldnodefield-program-stories-block .search-result .field--name-field-stories-title a:hover, body .search-result .block--openedu-news-events-widget .field--name-field-stories-title a:hover,
+body .block--openedu-news-events-widget .search-result .field--name-field-stories-title a:hover {
+  color: #ea772e;
+}
+body .block-entity-fieldnodefield-program-faculty article h4 a:hover,
+body .block--profile-block article h4 a:hover {
+  color: #ea772e;
+}
+body .block-entity-fieldnodefield-program-faculty article .profile-picture:hover ~ h4 a,
+body .block--profile-block article .profile-picture:hover ~ h4 a {
+  color: #ea772e;
+}
+body .block-entity-fieldnodefield-program-faculty article:after,
+body .block--profile-block article:after {
+  background: #ea772e;
+}
+@media (min-width: 768px) {
+  body .block-views-blockprofile-list-profile-listing-block .views-row:hover {
+    border-right: 4px solid #ea772e;
+  }
+}
+body .block-views-blockprofile-list-profile-listing-block a:hover {
+  color: #ea772e;
+}
+body .block-views-blockprofile-list-profile-listing-block .field--name-field-profile-email a {
+  color: #ea772e;
+}
+body .block-views-blockprofile-list-profile-listing-block .field--name-field-profile-name:hover {
+  color: #ea772e;
+}
+body .block-views-blockprofile-list-profile-listing-block .field--name-field-profile-department .field--item a {
+  color: #ea772e;
+}
+body .page-node-type-profile .region-container .panel-oedu-container .field--name-field-profile-department a,
+body .page-node-type-profile .region-container .panel-oedu-container .field--name-field-profile-education a {
+  color: #ea772e;
+}
+body .page-node-type-profile .region-container .panel-oedu-container .field--name-field-profile-research-projects .field--item:hover {
+  border-color: #ea772e;
+}
+body article.event.teaser:hover {
+  box-shadow: inset -5px 0 0 0 #ea772e;
+}
+body article.event.teaser .content .wrapper h2 a:hover, body article.event.teaser .content .wrapper .region-container .block-region-middle .block .field--label:first-of-type a:hover, body .region-container .block-region-middle .block article.event.teaser .content .wrapper .field--label:first-of-type a:hover, body article.event.teaser .content .wrapper .region-container .block-region-left .block .field--label:first-of-type a:hover,
+body .region-container .block-region-left .block article.event.teaser .content .wrapper .field--label:first-of-type a:hover, body article.event.teaser .content .wrapper .block-entity-fieldnodefield-program-faculty .block-title a:hover, body .block-entity-fieldnodefield-program-faculty article.event.teaser .content .wrapper .block-title a:hover, body article.event.teaser .content .wrapper .block--profile-block .block-title a:hover,
+body .block--profile-block article.event.teaser .content .wrapper .block-title a:hover, body article.event.teaser .content .wrapper .block--openedu-grid-block .field--name-field-grid-label a:hover, body .block--openedu-grid-block article.event.teaser .content .wrapper .field--name-field-grid-label a:hover, body article.event.teaser .content .wrapper .block-entity-fieldnodefield-program-grid-block .field--name-field-grid-label a:hover,
+body .block-entity-fieldnodefield-program-grid-block article.event.teaser .content .wrapper .field--name-field-grid-label a:hover, body article.event.teaser .content .wrapper .block--openedu-stories-block .field--name-field-stories-title a:hover, body .block--openedu-stories-block article.event.teaser .content .wrapper .field--name-field-stories-title a:hover, body article.event.teaser .content .wrapper .block-entity-fieldnodefield-program-stories-block .field--name-field-stories-title a:hover, body .block-entity-fieldnodefield-program-stories-block article.event.teaser .content .wrapper .field--name-field-stories-title a:hover, body article.event.teaser .content .wrapper .block--openedu-news-events-widget .field--name-field-stories-title a:hover,
+body .block--openedu-news-events-widget article.event.teaser .content .wrapper .field--name-field-stories-title a:hover {
+  color: #ea772e;
+}
+body .block-views-blockevent-featured-events-block .field--name-field-event-image img,
+body .block-views-blockevents-featured-events-block .field--name-field-event-image img {
+  width: 100%;
+  border-bottom: 0.3em solid #ea772e;
+}
+body .block-views-blockevent-latest-events-block header .query-filter-cards .card.clear a:hover,
+body .block-views-blockevent-latest-events-block footer .query-filter-cards .card.clear a:hover,
+body .block-views-blockevents-latest-events-block header .query-filter-cards .card.clear a:hover,
+body .block-views-blockevents-latest-events-block footer .query-filter-cards .card.clear a:hover {
+  color: #ea772e;
+}
+body .block-views-blocknews-featured-news-block .flickity-viewport .gallery-cell article.news .image {
+  border-bottom: 5px solid #ea772e;
+}
+@media (min-width: 768px) {
+  body .block-views-blocknews-latest-news-block .views-row .content:hover {
+    box-shadow: inset -5px 0 0 0 #ea772e;
+  }
+}
+body .block-views-blocknews-latest-news-block .views-row .content .wrapper h2 a:hover, body .block-views-blocknews-latest-news-block .views-row .content .wrapper .region-container .block-region-middle .block .field--label:first-of-type a:hover, body .region-container .block-region-middle .block .block-views-blocknews-latest-news-block .views-row .content .wrapper .field--label:first-of-type a:hover, body .block-views-blocknews-latest-news-block .views-row .content .wrapper .region-container .block-region-left .block .field--label:first-of-type a:hover,
+body .region-container .block-region-left .block .block-views-blocknews-latest-news-block .views-row .content .wrapper .field--label:first-of-type a:hover, body .block-views-blocknews-latest-news-block .views-row .content .wrapper .block-entity-fieldnodefield-program-faculty .block-title a:hover, body .block-entity-fieldnodefield-program-faculty .block-views-blocknews-latest-news-block .views-row .content .wrapper .block-title a:hover, body .block-views-blocknews-latest-news-block .views-row .content .wrapper .block--profile-block .block-title a:hover,
+body .block--profile-block .block-views-blocknews-latest-news-block .views-row .content .wrapper .block-title a:hover, body .block-views-blocknews-latest-news-block .views-row .content .wrapper .block--openedu-grid-block .field--name-field-grid-label a:hover, body .block--openedu-grid-block .block-views-blocknews-latest-news-block .views-row .content .wrapper .field--name-field-grid-label a:hover, body .block-views-blocknews-latest-news-block .views-row .content .wrapper .block-entity-fieldnodefield-program-grid-block .field--name-field-grid-label a:hover,
+body .block-entity-fieldnodefield-program-grid-block .block-views-blocknews-latest-news-block .views-row .content .wrapper .field--name-field-grid-label a:hover, body .block-views-blocknews-latest-news-block .views-row .content .wrapper .block--openedu-stories-block .field--name-field-stories-title a:hover, body .block--openedu-stories-block .block-views-blocknews-latest-news-block .views-row .content .wrapper .field--name-field-stories-title a:hover, body .block-views-blocknews-latest-news-block .views-row .content .wrapper .block-entity-fieldnodefield-program-stories-block .field--name-field-stories-title a:hover, body .block-entity-fieldnodefield-program-stories-block .block-views-blocknews-latest-news-block .views-row .content .wrapper .field--name-field-stories-title a:hover, body .block-views-blocknews-latest-news-block .views-row .content .wrapper .block--openedu-news-events-widget .field--name-field-stories-title a:hover,
+body .block--openedu-news-events-widget .block-views-blocknews-latest-news-block .views-row .content .wrapper .field--name-field-stories-title a:hover {
+  color: #ea772e;
+}
+body .btn-primary.disabled, body .btn-primary:disabled {
+  background-color: #024b77;
+  border-color: #024b77;
+}
+body .btn-outline-primary {
+  color: #024b77;
+  border-color: #024b77;
+}
+body .btn-outline-primary:hover {
+  background-color: #024b77;
+  border-color: #024b77;
+}
+body .btn-outline-primary.disabled, body .btn-outline-primary:disabled {
+  color: #024b77;
+}
+body .btn-outline-primary:not(:disabled):not(.disabled):active, body .btn-outline-primary:not(:disabled):not(.disabled).active,
+body .show > .btn-outline-primary.dropdown-toggle {
+  background-color: #024b77;
+  border-color: #024b77;
+}
+body .dropdown-item.active, body .dropdown-item:active {
+  background-color: #024b77;
+}
+body .custom-control-input:checked ~ .custom-control-label::before {
+  background-color: #024b77;
+}
+body .custom-checkbox .custom-control-input:checked ~ .custom-control-label::before {
+  background-color: #024b77;
+}
+body .custom-checkbox .custom-control-input:indeterminate ~ .custom-control-label::before {
+  background-color: #024b77;
+}
+body .custom-radio .custom-control-input:checked ~ .custom-control-label::before {
+  background-color: #024b77;
+}
+body .nav-pills .nav-link.active,
+body .nav-pills .show > .nav-link {
+  color: #fff;
+  background-color: #024b77;
+}
+body .page-item.active .page-link {
+  z-index: 1;
+  color: #fff;
+  background-color: #024b77;
+  border-color: #024b77;
+}
+body .badge-primary {
+  color: #fff;
+  background-color: #024b77;
+}
+body .progress-bar {
+  background-color: #024b77;
+}
+body .list-group-item.active {
+  background-color: #024b77;
+  border-color: #024b77;
+}
+body .bg-primary {
+  background-color: #024b77 !important;
+}
+body .border-primary {
+  border-color: #024b77 !important;
+}
+body .text-primary {
+  color: #024b77 !important;
+}
+body .addtocal-form .addtocal-container .form-item:hover {
+  color: #024b77;
+}
+body .addtocal-form .addtocal-container > div:nth-child(2) {
+  border-bottom: 5px solid #024b77;
+}
+body .file > span {
+  color: #024b77;
+}
+body .views-exposed-form .select-wrapper a.chosen-single {
+  background: #024b77;
+  border: 1px solid #024b77;
+}
+body .select-wrapper:after {
+  color: #024b77;
+}
+body .tabledrag-handle:hover, body .tabledrag-handle:focus {
+  color: #024b77;
+}
+body .progress-throbber .path {
+  stroke: #024b77;
+}
+@keyframes colors {
+  0% {
+    stroke: #024b77;
+  }
+  50% {
+    stroke: #17a5fb;
+  }
+  100% {
+    stroke: #024b77;
+  }
+}
+body .ui-autocomplete .ui-menu-item.ui-state-active, body .ui-autocomplete .ui-menu-item.ui-state-focus {
+  background: #024b77;
+}
+body .bg-primary {
+  background-color: #024b77 !important;
+}
+body footer.footer section.block--basic {
+  background-color: #024b77;
+}
+body .region-container .block-region-middle .block-title,
+body .region-container .block-region-left .block-title {
+  color: #024b77;
+}
+body .region-container .block-region-middle .block .field--label:first-of-type,
+body .region-container .block-region-left .block .field--label:first-of-type {
+  color: #024b77;
+}
+body .site-tag-clr:hover, body .page-node-type-profile .region-container .panel-oedu-container .field--name-field-profile-research-interests .field--item:hover, body .page-node-type-event .region-container .panel-oedu-container .field--name-field-events-category .field--item:hover, body .page-node-type-news .region-container .panel-oedu-container .panel-oedu-2col .block-entity-fieldnodefield-news-categories .field--item:hover {
+  background: #024b77;
+}
+body .site-tag-med {
+  background-color: #024b77;
+}
+body #header {
+  background-color: #024b77;
+}
+body .search_bar .form-submit {
+  border-bottom: 4px solid #024b77;
+}
+body .search_bar .form-control:focus {
+  border-bottom: 4px solid #024b77;
+}
+body .pagination .pager__item.active a {
+  color: #024b77;
+}
+body .page-node-type-program .block-entity-fieldnodefield-program-stories-block {
+  background: #024b77;
+}
+body .page-node-type-program .block-entity-fieldnodefield-program-course-intro .block-title {
+  color: #024b77;
+}
+body .page-node-type-program .block-entity-fieldnodefield-program-courses .field--name-field-program-courses > .field--item article:hover {
+  border-color: #024b77;
+}
+body .page-node-type-program .block-entity-fieldnodefield-program-courses .field--name-field-program-courses > .field--item h2, body .page-node-type-program .block-entity-fieldnodefield-program-courses .field--name-field-program-courses > .field--item .region-container .block-region-middle .block .field--label:first-of-type, body .region-container .block-region-middle .block .page-node-type-program .block-entity-fieldnodefield-program-courses .field--name-field-program-courses > .field--item .field--label:first-of-type, body .page-node-type-program .block-entity-fieldnodefield-program-courses .field--name-field-program-courses > .field--item .region-container .block-region-left .block .field--label:first-of-type,
+body .region-container .block-region-left .block .page-node-type-program .block-entity-fieldnodefield-program-courses .field--name-field-program-courses > .field--item .field--label:first-of-type, body .page-node-type-program .block-entity-fieldnodefield-program-courses .field--name-field-program-courses > .field--item .block-entity-fieldnodefield-program-faculty .block-title, body .block-entity-fieldnodefield-program-faculty .page-node-type-program .block-entity-fieldnodefield-program-courses .field--name-field-program-courses > .field--item .block-title, body .page-node-type-program .block-entity-fieldnodefield-program-courses .field--name-field-program-courses > .field--item .block--profile-block .block-title,
+body .block--profile-block .page-node-type-program .block-entity-fieldnodefield-program-courses .field--name-field-program-courses > .field--item .block-title, body .page-node-type-program .block-entity-fieldnodefield-program-courses .field--name-field-program-courses > .field--item .block--openedu-grid-block .field--name-field-grid-label, body .block--openedu-grid-block .page-node-type-program .block-entity-fieldnodefield-program-courses .field--name-field-program-courses > .field--item .field--name-field-grid-label, body .page-node-type-program .block-entity-fieldnodefield-program-courses .field--name-field-program-courses > .field--item .block-entity-fieldnodefield-program-grid-block .field--name-field-grid-label,
+body .block-entity-fieldnodefield-program-grid-block .page-node-type-program .block-entity-fieldnodefield-program-courses .field--name-field-program-courses > .field--item .field--name-field-grid-label, body .page-node-type-program .block-entity-fieldnodefield-program-courses .field--name-field-program-courses > .field--item .block--openedu-stories-block .field--name-field-stories-title, body .block--openedu-stories-block .page-node-type-program .block-entity-fieldnodefield-program-courses .field--name-field-program-courses > .field--item .field--name-field-stories-title, body .page-node-type-program .block-entity-fieldnodefield-program-courses .field--name-field-program-courses > .field--item .block-entity-fieldnodefield-program-stories-block .field--name-field-stories-title, body .block-entity-fieldnodefield-program-stories-block .page-node-type-program .block-entity-fieldnodefield-program-courses .field--name-field-program-courses > .field--item .field--name-field-stories-title, body .page-node-type-program .block-entity-fieldnodefield-program-courses .field--name-field-program-courses > .field--item .block--openedu-news-events-widget .field--name-field-stories-title,
+body .block--openedu-news-events-widget .page-node-type-program .block-entity-fieldnodefield-program-courses .field--name-field-program-courses > .field--item .field--name-field-stories-title {
+  color: #024b77;
+}
+body .page-node-type-program .block-entity-fieldnodefield-program-courses .field--name-field-program-courses > .field--item h2 a, body .page-node-type-program .block-entity-fieldnodefield-program-courses .field--name-field-program-courses > .field--item .region-container .block-region-middle .block .field--label:first-of-type a, body .region-container .block-region-middle .block .page-node-type-program .block-entity-fieldnodefield-program-courses .field--name-field-program-courses > .field--item .field--label:first-of-type a, body .page-node-type-program .block-entity-fieldnodefield-program-courses .field--name-field-program-courses > .field--item .region-container .block-region-left .block .field--label:first-of-type a,
+body .region-container .block-region-left .block .page-node-type-program .block-entity-fieldnodefield-program-courses .field--name-field-program-courses > .field--item .field--label:first-of-type a, body .page-node-type-program .block-entity-fieldnodefield-program-courses .field--name-field-program-courses > .field--item .block-entity-fieldnodefield-program-faculty .block-title a, body .block-entity-fieldnodefield-program-faculty .page-node-type-program .block-entity-fieldnodefield-program-courses .field--name-field-program-courses > .field--item .block-title a, body .page-node-type-program .block-entity-fieldnodefield-program-courses .field--name-field-program-courses > .field--item .block--profile-block .block-title a,
+body .block--profile-block .page-node-type-program .block-entity-fieldnodefield-program-courses .field--name-field-program-courses > .field--item .block-title a, body .page-node-type-program .block-entity-fieldnodefield-program-courses .field--name-field-program-courses > .field--item .block--openedu-grid-block .field--name-field-grid-label a, body .block--openedu-grid-block .page-node-type-program .block-entity-fieldnodefield-program-courses .field--name-field-program-courses > .field--item .field--name-field-grid-label a, body .page-node-type-program .block-entity-fieldnodefield-program-courses .field--name-field-program-courses > .field--item .block-entity-fieldnodefield-program-grid-block .field--name-field-grid-label a,
+body .block-entity-fieldnodefield-program-grid-block .page-node-type-program .block-entity-fieldnodefield-program-courses .field--name-field-program-courses > .field--item .field--name-field-grid-label a, body .page-node-type-program .block-entity-fieldnodefield-program-courses .field--name-field-program-courses > .field--item .block--openedu-stories-block .field--name-field-stories-title a, body .block--openedu-stories-block .page-node-type-program .block-entity-fieldnodefield-program-courses .field--name-field-program-courses > .field--item .field--name-field-stories-title a, body .page-node-type-program .block-entity-fieldnodefield-program-courses .field--name-field-program-courses > .field--item .block-entity-fieldnodefield-program-stories-block .field--name-field-stories-title a, body .block-entity-fieldnodefield-program-stories-block .page-node-type-program .block-entity-fieldnodefield-program-courses .field--name-field-program-courses > .field--item .field--name-field-stories-title a, body .page-node-type-program .block-entity-fieldnodefield-program-courses .field--name-field-program-courses > .field--item .block--openedu-news-events-widget .field--name-field-stories-title a,
+body .block--openedu-news-events-widget .page-node-type-program .block-entity-fieldnodefield-program-courses .field--name-field-program-courses > .field--item .field--name-field-stories-title a {
+  color: #024b77;
+}
+body .page-node-type-event .region-container .panel-oedu-container .field--type-address {
+  border-top: 5px solid #024b77;
+}
+body .page-node-type-event .region-container .panel-oedu-container .field--type-address .address .organization {
+  color: #024b77;
+}
+body .page-node-type-news .region-container .panel-oedu-container .panel-oedu-2col .field--label {
+  color: #024b77;
+}
+body .block-views-blocknews-featured-news-block .block-title {
+  color: #024b77;
+}
+body .block--openedu-grid-block .field--name-field-grid-label,
+body .block-entity-fieldnodefield-program-grid-block .field--name-field-grid-label {
+  color: #024b77;
+}
+body .block--openedu-mnt .block-title {
+  color: #024b77;
+}
+body .path-frontpage .block--openedu-stories-block .field--name-field-stories-title, body .path-frontpage .block-entity-fieldnodefield-program-stories-block .field--name-field-stories-title, body .path-frontpage .block--openedu-news-events-widget .field--name-field-stories-title {
+  color: #024b77;
+}
+body #navbar .nav .dropdown .dropdown-menu li:active {
+  background: #27658b;
+}
+body footer .block-webform {
+  background: #27658b;
+}
+body .bs-popover-bottom .popover-header::before, body .bs-popover-auto[x-placement^=bottom] .popover-header::before {
+  border-bottom: 1px solid #f7f7f7;
+}
+body .popover-header {
+  background-color: #f7f7f7;
+}
+body .carousel .gallery-cell article h2 a, body .carousel .gallery-cell article .region-container .block-region-middle .block .field--label:first-of-type a, body .region-container .block-region-middle .block .carousel .gallery-cell article .field--label:first-of-type a, body .carousel .gallery-cell article .region-container .block-region-left .block .field--label:first-of-type a,
+body .region-container .block-region-left .block .carousel .gallery-cell article .field--label:first-of-type a, body .carousel .gallery-cell article .block-entity-fieldnodefield-program-faculty .block-title a, body .block-entity-fieldnodefield-program-faculty .carousel .gallery-cell article .block-title a, body .carousel .gallery-cell article .block--profile-block .block-title a,
+body .block--profile-block .carousel .gallery-cell article .block-title a, body .carousel .gallery-cell article .block--openedu-grid-block .field--name-field-grid-label a, body .block--openedu-grid-block .carousel .gallery-cell article .field--name-field-grid-label a, body .carousel .gallery-cell article .block-entity-fieldnodefield-program-grid-block .field--name-field-grid-label a,
+body .block-entity-fieldnodefield-program-grid-block .carousel .gallery-cell article .field--name-field-grid-label a, body .carousel .gallery-cell article .block--openedu-stories-block .field--name-field-stories-title a, body .block--openedu-stories-block .carousel .gallery-cell article .field--name-field-stories-title a, body .carousel .gallery-cell article .block-entity-fieldnodefield-program-stories-block .field--name-field-stories-title a, body .block-entity-fieldnodefield-program-stories-block .carousel .gallery-cell article .field--name-field-stories-title a, body .carousel .gallery-cell article .block--openedu-news-events-widget .field--name-field-stories-title a,
+body .block--openedu-news-events-widget .carousel .gallery-cell article .field--name-field-stories-title a {
+  color: #4a4a4a;
+}
+body .datepicker .datepicker--nav-title {
+  color: #4a4a4a;
+}
+body .facet-item a.is-active {
+  color: #4a4a4a;
+}
+body #header .menu--resources .dropdown-menu .dropdown-item {
+  color: #4a4a4a;
+}
+body #navbar .nav .dropdown .dropdown-menu a {
+  color: #4a4a4a;
+}
+body .view-openedu-search .view-header {
+  color: #4a4a4a;
+}
+body .search-result h2 a, body .search-result .region-container .block-region-middle .block .field--label:first-of-type a, body .region-container .block-region-middle .block .search-result .field--label:first-of-type a, body .search-result .region-container .block-region-left .block .field--label:first-of-type a,
+body .region-container .block-region-left .block .search-result .field--label:first-of-type a, body .search-result .block-entity-fieldnodefield-program-faculty .block-title a, body .block-entity-fieldnodefield-program-faculty .search-result .block-title a, body .search-result .block--profile-block .block-title a,
+body .block--profile-block .search-result .block-title a, body .search-result .block--openedu-grid-block .field--name-field-grid-label a, body .block--openedu-grid-block .search-result .field--name-field-grid-label a, body .search-result .block-entity-fieldnodefield-program-grid-block .field--name-field-grid-label a,
+body .block-entity-fieldnodefield-program-grid-block .search-result .field--name-field-grid-label a, body .search-result .block--openedu-stories-block .field--name-field-stories-title a, body .block--openedu-stories-block .search-result .field--name-field-stories-title a, body .search-result .block-entity-fieldnodefield-program-stories-block .field--name-field-stories-title a, body .block-entity-fieldnodefield-program-stories-block .search-result .field--name-field-stories-title a, body .search-result .block--openedu-news-events-widget .field--name-field-stories-title a,
+body .block--openedu-news-events-widget .search-result .field--name-field-stories-title a {
+  color: #4a4a4a;
+}
+body .search-result cite {
+  color: #4a4a4a;
+}
+body .search-result .content {
+  color: #4a4a4a;
+}
+body .block-views-blockprofile-list-profile-listing-block .field--name-field-profile-name {
+  color: #4a4a4a;
+}
+body article.event.teaser .content .wrapper h2 a, body article.event.teaser .content .wrapper .region-container .block-region-middle .block .field--label:first-of-type a, body .region-container .block-region-middle .block article.event.teaser .content .wrapper .field--label:first-of-type a, body article.event.teaser .content .wrapper .region-container .block-region-left .block .field--label:first-of-type a,
+body .region-container .block-region-left .block article.event.teaser .content .wrapper .field--label:first-of-type a, body article.event.teaser .content .wrapper .block-entity-fieldnodefield-program-faculty .block-title a, body .block-entity-fieldnodefield-program-faculty article.event.teaser .content .wrapper .block-title a, body article.event.teaser .content .wrapper .block--profile-block .block-title a,
+body .block--profile-block article.event.teaser .content .wrapper .block-title a, body article.event.teaser .content .wrapper .block--openedu-grid-block .field--name-field-grid-label a, body .block--openedu-grid-block article.event.teaser .content .wrapper .field--name-field-grid-label a, body article.event.teaser .content .wrapper .block-entity-fieldnodefield-program-grid-block .field--name-field-grid-label a,
+body .block-entity-fieldnodefield-program-grid-block article.event.teaser .content .wrapper .field--name-field-grid-label a, body article.event.teaser .content .wrapper .block--openedu-stories-block .field--name-field-stories-title a, body .block--openedu-stories-block article.event.teaser .content .wrapper .field--name-field-stories-title a, body article.event.teaser .content .wrapper .block-entity-fieldnodefield-program-stories-block .field--name-field-stories-title a, body .block-entity-fieldnodefield-program-stories-block article.event.teaser .content .wrapper .field--name-field-stories-title a, body article.event.teaser .content .wrapper .block--openedu-news-events-widget .field--name-field-stories-title a,
+body .block--openedu-news-events-widget article.event.teaser .content .wrapper .field--name-field-stories-title a {
+  color: #4a4a4a;
+}
+body article.event.teaser .content .wrapper .date {
+  color: #4a4a4a;
+}
+body article.event.featured-content .content > .wrapper h2 a, body article.event.featured-content .content > .wrapper .region-container .block-region-middle .block .field--label:first-of-type a, body .region-container .block-region-middle .block article.event.featured-content .content > .wrapper .field--label:first-of-type a, body article.event.featured-content .content > .wrapper .region-container .block-region-left .block .field--label:first-of-type a,
+body .region-container .block-region-left .block article.event.featured-content .content > .wrapper .field--label:first-of-type a, body article.event.featured-content .content > .wrapper .block-entity-fieldnodefield-program-faculty .block-title a, body .block-entity-fieldnodefield-program-faculty article.event.featured-content .content > .wrapper .block-title a, body article.event.featured-content .content > .wrapper .block--profile-block .block-title a,
+body .block--profile-block article.event.featured-content .content > .wrapper .block-title a, body article.event.featured-content .content > .wrapper .block--openedu-grid-block .field--name-field-grid-label a, body .block--openedu-grid-block article.event.featured-content .content > .wrapper .field--name-field-grid-label a, body article.event.featured-content .content > .wrapper .block-entity-fieldnodefield-program-grid-block .field--name-field-grid-label a,
+body .block-entity-fieldnodefield-program-grid-block article.event.featured-content .content > .wrapper .field--name-field-grid-label a, body article.event.featured-content .content > .wrapper .block--openedu-stories-block .field--name-field-stories-title a, body .block--openedu-stories-block article.event.featured-content .content > .wrapper .field--name-field-stories-title a, body article.event.featured-content .content > .wrapper .block-entity-fieldnodefield-program-stories-block .field--name-field-stories-title a, body .block-entity-fieldnodefield-program-stories-block article.event.featured-content .content > .wrapper .field--name-field-stories-title a, body article.event.featured-content .content > .wrapper .block--openedu-news-events-widget .field--name-field-stories-title a,
+body .block--openedu-news-events-widget article.event.featured-content .content > .wrapper .field--name-field-stories-title a {
+  color: #4a4a4a;
+}
+body article.event.featured-content .content > .wrapper .date {
+  font-size: 14px;
+  color: #4a4a4a;
+  font-weight: 600;
+}
+body .block-views-blockevent-latest-events-block header .pager-nav .pagination .pager__item a,
+body .block-views-blockevent-latest-events-block footer .pager-nav .pagination .pager__item a,
+body .block-views-blockevents-latest-events-block header .pager-nav .pagination .pager__item a,
+body .block-views-blockevents-latest-events-block footer .pager-nav .pagination .pager__item a {
+  color: #4a4a4a;
+}
+body .block-views-blocknews-featured-news-block .flickity-viewport .gallery-cell article.news .wrapper {
+  color: #4a4a4a;
+}
+body .block-views-blocknews-featured-news-block .flickity-viewport .gallery-cell article.news .wrapper h2 a, body .block-views-blocknews-featured-news-block .flickity-viewport .gallery-cell article.news .wrapper .region-container .block-region-middle .block .field--label:first-of-type a, body .region-container .block-region-middle .block .block-views-blocknews-featured-news-block .flickity-viewport .gallery-cell article.news .wrapper .field--label:first-of-type a, body .block-views-blocknews-featured-news-block .flickity-viewport .gallery-cell article.news .wrapper .region-container .block-region-left .block .field--label:first-of-type a,
+body .region-container .block-region-left .block .block-views-blocknews-featured-news-block .flickity-viewport .gallery-cell article.news .wrapper .field--label:first-of-type a, body .block-views-blocknews-featured-news-block .flickity-viewport .gallery-cell article.news .wrapper .block-entity-fieldnodefield-program-faculty .block-title a, body .block-entity-fieldnodefield-program-faculty .block-views-blocknews-featured-news-block .flickity-viewport .gallery-cell article.news .wrapper .block-title a, body .block-views-blocknews-featured-news-block .flickity-viewport .gallery-cell article.news .wrapper .block--profile-block .block-title a,
+body .block--profile-block .block-views-blocknews-featured-news-block .flickity-viewport .gallery-cell article.news .wrapper .block-title a, body .block-views-blocknews-featured-news-block .flickity-viewport .gallery-cell article.news .wrapper .block--openedu-grid-block .field--name-field-grid-label a, body .block--openedu-grid-block .block-views-blocknews-featured-news-block .flickity-viewport .gallery-cell article.news .wrapper .field--name-field-grid-label a, body .block-views-blocknews-featured-news-block .flickity-viewport .gallery-cell article.news .wrapper .block-entity-fieldnodefield-program-grid-block .field--name-field-grid-label a,
+body .block-entity-fieldnodefield-program-grid-block .block-views-blocknews-featured-news-block .flickity-viewport .gallery-cell article.news .wrapper .field--name-field-grid-label a, body .block-views-blocknews-featured-news-block .flickity-viewport .gallery-cell article.news .wrapper .block--openedu-stories-block .field--name-field-stories-title a, body .block--openedu-stories-block .block-views-blocknews-featured-news-block .flickity-viewport .gallery-cell article.news .wrapper .field--name-field-stories-title a, body .block-views-blocknews-featured-news-block .flickity-viewport .gallery-cell article.news .wrapper .block-entity-fieldnodefield-program-stories-block .field--name-field-stories-title a, body .block-entity-fieldnodefield-program-stories-block .block-views-blocknews-featured-news-block .flickity-viewport .gallery-cell article.news .wrapper .field--name-field-stories-title a, body .block-views-blocknews-featured-news-block .flickity-viewport .gallery-cell article.news .wrapper .block--openedu-news-events-widget .field--name-field-stories-title a,
+body .block--openedu-news-events-widget .block-views-blocknews-featured-news-block .flickity-viewport .gallery-cell article.news .wrapper .field--name-field-stories-title a {
+  color: #4a4a4a;
+}
+body .block-views-blocknews-latest-news-block .views-row .content .wrapper {
+  color: #4a4a4a;
+}
+body .block-views-blocknews-latest-news-block .views-row .content .wrapper h2 a, body .block-views-blocknews-latest-news-block .views-row .content .wrapper .region-container .block-region-middle .block .field--label:first-of-type a, body .region-container .block-region-middle .block .block-views-blocknews-latest-news-block .views-row .content .wrapper .field--label:first-of-type a, body .block-views-blocknews-latest-news-block .views-row .content .wrapper .region-container .block-region-left .block .field--label:first-of-type a,
+body .region-container .block-region-left .block .block-views-blocknews-latest-news-block .views-row .content .wrapper .field--label:first-of-type a, body .block-views-blocknews-latest-news-block .views-row .content .wrapper .block-entity-fieldnodefield-program-faculty .block-title a, body .block-entity-fieldnodefield-program-faculty .block-views-blocknews-latest-news-block .views-row .content .wrapper .block-title a, body .block-views-blocknews-latest-news-block .views-row .content .wrapper .block--profile-block .block-title a,
+body .block--profile-block .block-views-blocknews-latest-news-block .views-row .content .wrapper .block-title a, body .block-views-blocknews-latest-news-block .views-row .content .wrapper .block--openedu-grid-block .field--name-field-grid-label a, body .block--openedu-grid-block .block-views-blocknews-latest-news-block .views-row .content .wrapper .field--name-field-grid-label a, body .block-views-blocknews-latest-news-block .views-row .content .wrapper .block-entity-fieldnodefield-program-grid-block .field--name-field-grid-label a,
+body .block-entity-fieldnodefield-program-grid-block .block-views-blocknews-latest-news-block .views-row .content .wrapper .field--name-field-grid-label a, body .block-views-blocknews-latest-news-block .views-row .content .wrapper .block--openedu-stories-block .field--name-field-stories-title a, body .block--openedu-stories-block .block-views-blocknews-latest-news-block .views-row .content .wrapper .field--name-field-stories-title a, body .block-views-blocknews-latest-news-block .views-row .content .wrapper .block-entity-fieldnodefield-program-stories-block .field--name-field-stories-title a, body .block-entity-fieldnodefield-program-stories-block .block-views-blocknews-latest-news-block .views-row .content .wrapper .field--name-field-stories-title a, body .block-views-blocknews-latest-news-block .views-row .content .wrapper .block--openedu-news-events-widget .field--name-field-stories-title a,
+body .block--openedu-news-events-widget .block-views-blocknews-latest-news-block .views-row .content .wrapper .field--name-field-stories-title a {
+  color: #4a4a4a;
+}
+body .alert-light {
+  background-color: #fefefe;
+}
+body .views-exposed-form .form-submit {
+  background: #00a6e5; }
+body .btn-primary {
+  background-color: #00a6e5;
+  border-color: #00a6e5; }
+body .btn-primary:hover {
+  background-color: #00a6e5; }
+body .btn-primary.disabled, body .btn-primary:disabled {
+  background-color: #00a6e5;
+  border-color: #00a6e5; }
+body .openedu-stat {
+  color: #00a6e5; }
+body #header .menu--resources .dropdown-menu .dropdown-item:hover {
+  background: #00a6e5; }
+body #header .menu--utility-navigation ul a:hover, body #header .menu--utility-navigation ul a:focus {
+  color: #00a6e5; }
+body #navbar .nav .dropdown .dropdown-menu li:active {
+  background: #00a6e5; }
+body .panel-oedu-1col.subsection {
+  border-top: 3px solid #00a6e5;
+  border-bottom: 0.313em solid #00a6e5; }
+body .panel-oedu-1col.subsection .field--name-field-event-date .date span i:hover {
+  color: #00a6e5; }
+body .main_navigation-block--mobile li a:hover, body .main_navigation-block--mobile li a:focus {
+  color: #00a6e5; }
+body .main_navigation-block--mobile li.dropdown.show .dropdown-menu li a:hover, body .main_navigation-block--mobile li.dropdown.show .dropdown-menu li a:focus {
+  color: #00a6e5; }
+body .node--type-profile .block-region-right .block .field .field--label {
+  background: #00a6e5; }
+body .page-node-type-event .region-container .panel-oedu-container .field--type-address .address .organization:before {
+  color: #00a6e5; }
+body .btn-primary:active, body .btn-primary.active, body .btn-primary.is-active {
+  background: #00a6e5; }
+@media (min-width: 768px) {
+  body .block--openedu-hero {
+    border-bottom: 5px solid #00a6e5; } }

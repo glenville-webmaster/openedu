@@ -1,0 +1,14 @@
+monaco.init:
+  js:
+    js/monaco_init.js: {}
+  css:
+    theme:
+      css/monaco_style.css: {}
+
+sub_color.init:
+  js:
+    js/sub_color.js: {}
+
+sub_theme_entity:
+  js:
+    js/sub_theme_entity.js: {}

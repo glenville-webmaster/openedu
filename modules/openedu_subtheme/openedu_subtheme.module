@@ -1,0 +1,141 @@
+<?php
+
+/**
+ * @file
+ * Contains openedu_subtheme.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+use Drupal\Core\Url;
+use Drupal\Core\Block\BlockPluginInterface;
+use Drupal\Core\Form\FormStateInterface;
+use Drupal\file\Entity\File;
+
+/**
+ * Implements hook_help().
+ */
+function openedu_subtheme_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the openedu_subtheme module.
+    case 'help.page.openedu_subtheme':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('OpenEDU Subtheme functionality') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_form_FORM_ID_alter().
+ */
+function openedu_subtheme_form_system_theme_settings_alter(&$form, FormStateInterface $form_state) {
+  $current_path = \Drupal::service('path.current')->getPath();
+  $path_args = explode('/', trim($current_path, '/'));
+  if (empty($path_args[3])) {
+    return;
+  }
+
+  $subthemeEntities = \Drupal::entityTypeManager()->getStorage('subtheme_entity')->loadByProperties([
+    'parent_machine_name' => $path_args[3],
+  ]);
+
+  $form['subtheme_list'] = [
+    '#type' => 'table',
+    '#prefix' => '<h3>' . t('OpenEDU subthemes') . '</h3>',
+    '#header' => [t('Subtheme Name'), t('Id'), t('Operations')],
+    '#empty' => t('You haven\'t added any subthemes yet. <a href="@add-url">Add a subtheme.</a>',
+      ['@add-url' => Url::fromRoute('entity.subtheme_entity.add_form')->toString()]),
+  ];
+
+  /** @var Drupal\openedu_subtheme\Entity\SubthemeEntity $entity */
+  foreach ($subthemeEntities as $id => $entity) {
+    $form['subtheme_list'][$id]['label'] = [
+      '#plain_text' => $entity->getName(),
+    ];
+    $form['subtheme_list'][$id]['id'] = [
+      '#plain_text' => $id,
+    ];
+    // Operations (dropbutton) column.
+    $form['subtheme_list'][$id]['operations'] = [
+      '#type' => 'operations',
+      '#links' => [],
+    ];
+    $form['subtheme_list'][$id]['operations']['#links']['edit'] = [
+      'title' => t('Edit'),
+      'url' => Url::fromRoute('entity.subtheme_entity.edit_form', ['subtheme_entity' => $id]),
+    ];
+    $form['subtheme_list'][$id]['operations']['#links']['delete'] = [
+      'title' => t('Delete'),
+      'url' => Url::fromRoute('entity.subtheme_entity.delete_form', ['subtheme_entity' => $id]),
+    ];
+  }
+}
+
+/**
+ * Implements hook_page_attachments().
+ */
+function openedu_subtheme_page_attachments(array &$attachments) {
+  $current_path = \Drupal::service('path.current')->getPath();
+  $theme = \Drupal::service('theme.manager')->getActiveTheme()->getName();
+  $e_ids = \Drupal::entityQuery('subtheme_entity')->condition('parent_machine_name', $theme)->execute();
+  $entities = \Drupal::entityTypeManager()->getStorage('subtheme_entity')->loadMultiple($e_ids);
+  $realpath_to_css = \Drupal::service('file_system')->realpath('public://') . '/openedu_subtheme/css/';
+
+  $path_to_css = file_create_url("public://") . 'openedu_subtheme/css/';
+  foreach ($entities as $ent_id => $entity) {
+    $pages_options = $entity->getPagesOption();
+    if (($entity->isInPages($current_path) == TRUE &&  $pages_options == 'include') || ($entity->isInPages($current_path) == FALSE &&  $pages_options == 'exclude')) {
+      if (file_exists($realpath_to_css . $ent_id . '.css')) {
+        $attachments['#attached']['html_head'][] = [[
+          '#tag' => 'link',
+          '#attributes' => [
+            'rel' => "stylesheet",
+            'href' => $path_to_css . $ent_id . '.css',
+          ],
+        ],
+          'openedu_subtheme',
+        ];
+      }
+    }
+  }
+}
+
+/**
+ * Implements hook_form_FORM_ID_alter() for subtheme_entity_edit_form().
+ */
+function openedu_subtheme_form_subtheme_entity_edit_form_alter(&$form, FormStateInterface $form_state) {
+  $form['parent_machine_name']['widget']['#disabled'] = 'disabled';
+}
+
+/**
+ * Implements hook_block_view_BASE_BLOCK_ID_alter() for system_branding_block().
+ */
+function openedu_subtheme_block_view_system_branding_block_alter(array &$build, BlockPluginInterface $block) {
+  $build['#pre_render'][] = 'openedu_subtheme_block_view_pre_render';
+}
+
+/**
+ * Sets openedu_subtheme preset logo.
+ */
+function openedu_subtheme_block_view_pre_render(array $build) {
+  $current_path = \Drupal::service('path.current')->getPath();
+  $theme = \Drupal::service('theme.manager')->getActiveTheme()->getName();
+  $e_ids = \Drupal::entityQuery('subtheme_entity')->condition('parent_machine_name', $theme)->execute();
+  $entities = \Drupal::entityTypeManager()->getStorage('subtheme_entity')->loadMultiple($e_ids);
+  foreach ($entities as $entity) {
+    $pages_options = $entity->getPagesOption();
+    $logo_id = $entity->getLogo();
+    if (($entity->isInPages($current_path) == TRUE &&  $pages_options == 'include') || ($entity->isInPages($current_path) == FALSE &&  $pages_options == 'exclude')) {
+      if ($logo_id) {
+        $logo_file = File::load($logo_id);
+        $path = $logo_file->getFileUri();
+        $build['content']['site_logo']['#uri'] = file_url_transform_relative(file_create_url($path));
+      }
+    }
+  }
+
+  $build['#cache']['max-age'] = 0;
+  return $build;
+}

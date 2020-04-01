@@ -1,0 +1,4 @@
+.toolbar-bar .ixm-dashboard-toggle::before {
+  background-image:url(../icons/dashboard.svg);
+}
+
