@@ -4,7 +4,7 @@
   "description": "Using Bootstrap 4 (beta) as its the only stable release at this time. Popper.js is loaded without node.",
   "main": "Gruntfile.js",
   "devDependencies": {
-    "bootstrap": "v4.0.0",
+    "bootstrap": "v4.4.1",
     "breakpoint-sass": "^2.7.0",
     "grunt": "^1.0.1",
     "grunt-autoprefixer": "^3.0.4",
