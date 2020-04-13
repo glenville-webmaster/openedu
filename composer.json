@@ -1,5 +1,5 @@
 {
-    "name": "glenville-webmaster/openedu-glenville",
+    "name": "glenville-webmaster/openedu",
     "description": "Template for Drupal 8 sites built using the OpenEDU distribution.",
     "type": "drupal-profile",
     "license": "GPL-2.0-or-later",
