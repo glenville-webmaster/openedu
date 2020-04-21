@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "3cd8c6758bf9877a9950be11fdfc01e2",
+    "content-hash": "388efb6b451f42450afd5b04c3433319",
     "packages": [
         {
             "name": "acquia/lightning",
@@ -3440,20 +3440,20 @@
         },
         {
             "name": "drupal/geocoder",
-            "version": "2.2.0",
+            "version": "2.12.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/geocoder.git",
-                "reference": "8.x-2.2"
+                "reference": "8.x-2.12"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/geocoder-8.x-2.2.zip",
-                "reference": "8.x-2.2",
-                "shasum": "fd7f3ded17e20ce971cba69a730d23adf1589674"
+                "url": "https://ftp.drupal.org/files/projects/geocoder-8.x-2.12.zip",
+                "reference": "8.x-2.12",
+                "shasum": "19bfb1f590a8bc394f1c556e4c9d4822f2ffc48a"
             },
             "require": {
-                "drupal/core": "~8.0",
+                "drupal/core": "^8 || ^9",
                 "willdurand/geocoder": "^3.3"
             },
             "require-dev": {
@@ -3469,8 +3469,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-2.2",
-                    "datestamp": "1567546388",
+                    "version": "8.x-2.12",
+                    "datestamp": "1586899591",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -7980,23 +7980,24 @@
         },
         {
             "name": "guzzlehttp/guzzle",
-            "version": "6.5.2",
+            "version": "6.5.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/guzzle.git",
-                "reference": "43ece0e75098b7ecd8d13918293029e555a50f82"
+                "reference": "aab4ebd862aa7d04f01a4b51849d657db56d882e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/43ece0e75098b7ecd8d13918293029e555a50f82",
-                "reference": "43ece0e75098b7ecd8d13918293029e555a50f82",
+                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/aab4ebd862aa7d04f01a4b51849d657db56d882e",
+                "reference": "aab4ebd862aa7d04f01a4b51849d657db56d882e",
                 "shasum": ""
             },
             "require": {
                 "ext-json": "*",
                 "guzzlehttp/promises": "^1.0",
                 "guzzlehttp/psr7": "^1.6.1",
-                "php": ">=5.5"
+                "php": ">=5.5",
+                "symfony/polyfill-intl-idn": "^1.11"
             },
             "require-dev": {
                 "ext-curl": "*",
@@ -8004,7 +8005,6 @@
                 "psr/log": "^1.1"
             },
             "suggest": {
-                "ext-intl": "Required for Internationalized Domain Name (IDN) support",
                 "psr/log": "Required for using the Log middleware"
             },
             "type": "library",
@@ -8043,7 +8043,7 @@
                 "rest",
                 "web service"
             ],
-            "time": "2019-12-23T11:57:10+00:00"
+            "time": "2020-04-18T10:38:46+00:00"
         },
         {
             "name": "guzzlehttp/promises",
@@ -14105,8 +14105,7 @@
     "minimum-stability": "dev",
     "stability-flags": {
         "drupal/calendar": 20,
-        "drupal/date_recur": 15,
-        "drupal/geocoder": 15
+        "drupal/date_recur": 15
     },
     "prefer-stable": true,
     "prefer-lowest": false,

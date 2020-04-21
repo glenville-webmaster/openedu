@@ -28,7 +28,7 @@
         "drupal/field_group": "^3.0",
         "drupal/flexible_layout": "^1.0",
         "drupal/flickity": "^2.2",
-        "drupal/geocoder": "^2.0@alpha",
+        "drupal/geocoder": "~2.0",
         "drupal/google_analytics": "^2.2",
         "drupal/google_analytics_reports": "~3.0",
         "drupal/google_map_field": "^1.4",
