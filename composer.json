@@ -45,7 +45,8 @@
         "drupal/views_block_filter_block": "~1.0",
         "drupal/webform": "^5.0",
         "drupal/yoast_seo": "~2.0",
-        "harvesthq/chosen": "^1.8"
+        "harvesthq/chosen": "^1.8",
+        "drupal/admin_toolbar_search": "^1.0"
     },
     "config": {
         "platform": {
