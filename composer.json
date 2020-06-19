@@ -14,11 +14,11 @@
         "drush/drush": "^9.2"
     },
     "require": {
-        "acquia/lightning": "~4.1.0",
+        "acquia/lightning": "~3.2.0",
         "drupal/address": "^1.0",
         "drupal/addtoany": "^1.7",
         "drupal/addtocal": "1.x-dev",
-        "drupal/admin_toolbar": "^1.0",
+        "drupal/admin_toolbar": "^1.18",
         "drupal/better_exposed_filters": "~3.0",
         "drupal/better_normalizers": "~1.0",
         "drupal/calendar": "1.x-dev",
@@ -26,10 +26,10 @@
         "drupal/date_recur": "^1.0@alpha",
         "drupal/default_content": "~1.0",
         "drupal/facets": "~1.0",
-        "drupal/field_group": "^3.0",
+        "drupal/field_group": "^1.0",
         "drupal/flexible_layout": "^1.0",
         "drupal/flickity": "^2.2",
-        "drupal/geocoder": "~2.0",
+        "drupal/geocoder": "~2.0@alpha",
         "drupal/google_analytics": "^2.2",
         "drupal/google_analytics_reports": "~3.0",
         "drupal/google_map_field": "^1.4",
@@ -40,13 +40,12 @@
         "drupal/sa11y": "~1.0",
         "drupal/search_api_autocomplete": "~1.0",
         "drupal/search_api_sorts": "^1.0",
-        "drupal/simple_sitemap": "^3.0",
+        "drupal/simple_sitemap": "^2.11",
         "drupal/twig_field_value": "^1.1",
         "drupal/views_block_filter_block": "~1.0",
         "drupal/webform": "^5.0",
         "drupal/yoast_seo": "~2.0",
-        "harvesthq/chosen": "^1.8",
-        "drupal/admin_toolbar_search": "^1.0"
+        "harvesthq/chosen": "^1.8"
     },
     "config": {
         "platform": {
@@ -118,9 +117,6 @@
             "drupal/core": {
                 "2699157 - Plugin Lazy loading can cause usort warning": "https://www.drupal.org/files/issues/2699157-23.drupal.Plugin-Lazy-loading-can-cause-usort-warning.patch",
                 "2924112 - Support class definition on field_layout": "https://www.drupal.org/files/issues/dynamic-regions-2924112-2.patch"
-            },
-            "drupal/addtocal": {
-                "Port to d8": "https://www.drupal.org/files/issues/portd7-2861672-4.patch"
             },
             "drupal/panels": {
                 "Page title empty": "https://www.drupal.org/files/issues/2018-03-19/panels--page_title_does_not_display--2869412-27.patch",
