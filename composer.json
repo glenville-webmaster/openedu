@@ -43,7 +43,7 @@
         "drupal/simple_sitemap": "^2.11",
         "drupal/twig_field_value": "^1.1",
         "drupal/views_block_filter_block": "~1.0",
-        "drupal/webform": "^5.13 <=5.15",
+        "drupal/webform": "<=5.15",
         "drupal/yoast_seo": "~2.0",
         "harvesthq/chosen": "^1.8"
     },
@@ -116,7 +116,7 @@
         "patches": {
             "drupal/core": {
                 "2699157 - Plugin Lazy loading can cause usort warning": "https://www.drupal.org/files/issues/2699157-23.drupal.Plugin-Lazy-loading-can-cause-usort-warning.patch",
-                "2924112 - Support class definition on field_layout": "https://www.drupal.org/files/issues/dynamic-regions-2924112-2.patch"
+                "2924112 - Support class definition on field_layout": "https://www.drupal.org/files/issues/2924112-dynamic_layouts-7.patch"
             },
             "drupal/panels": {
                 "Page title empty": "https://www.drupal.org/files/issues/2018-03-19/panels--page_title_does_not_display--2869412-27.patch",

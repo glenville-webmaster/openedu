@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "720f5f486df2e0b5fd918b23fa702489",
+    "content-hash": "d64195b7d3f0c0a646ac1f3c750f1d41",
     "packages": [
         {
             "name": "acquia/lightning",
@@ -2864,7 +2864,7 @@
                 },
                 "patches_applied": {
                     "2699157 - Plugin Lazy loading can cause usort warning": "https://www.drupal.org/files/issues/2699157-23.drupal.Plugin-Lazy-loading-can-cause-usort-warning.patch",
-                    "2924112 - Support class definition on field_layout": "https://www.drupal.org/files/issues/dynamic-regions-2924112-2.patch",
+                    "2924112 - Support class definition on field_layout": "https://www.drupal.org/files/issues/2924112-dynamic_layouts-7.patch",
                     "2869592 - Disabled update module shouldn't produce a status report warning": "https://www.drupal.org/files/issues/2869592-remove-update-warning-7.patch",
                     "2815221 - Add quickedit to the latest-revision route": "https://www.drupal.org/files/issues/2019-03-05/2815221-116.patch",
                     "1356276 - Allow profiles to define a base/parent profile and load them in the correct order": "https://www.drupal.org/files/issues/2018-10-12/1356276-531.patch",
