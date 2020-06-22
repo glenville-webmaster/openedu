@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e5c2114176a6230a994926b413b2e1e9",
+    "content-hash": "da1e779a07614413b13fcd3b82a83228",
     "packages": [
         {
             "name": "acquia/lightning",
@@ -1587,21 +1587,21 @@
         },
         {
             "name": "drupal/address",
-            "version": "1.8.0",
+            "version": "1.7.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/address.git",
-                "reference": "8.x-1.8"
+                "reference": "8.x-1.7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/address-8.x-1.8.zip",
-                "reference": "8.x-1.8",
-                "shasum": "ded73be392ba9257fca9289719757928a8826275"
+                "url": "https://ftp.drupal.org/files/projects/address-8.x-1.7.zip",
+                "reference": "8.x-1.7",
+                "shasum": "dab23a510090e59e3e6bc77faa517b523ad048ae"
             },
             "require": {
-                "commerceguys/addressing": "^1.0.7",
-                "drupal/core": "^8.7.7 || ^9"
+                "commerceguys/addressing": "^1.0.0",
+                "drupal/core": "^8.6"
             },
             "require-dev": {
                 "drupal/token": "^1.0"
@@ -1609,8 +1609,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-1.8",
-                    "datestamp": "1583988119",
+                    "version": "8.x-1.7",
+                    "datestamp": "1582913039",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -1707,26 +1707,29 @@
         },
         {
             "name": "drupal/addtocal",
-            "version": "dev-1.x",
+            "version": "1.0.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/addtocal.git",
-                "reference": "35602909dc95ead2fa5f477b2b57dba7552506ca"
+                "reference": "8.x-1.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/addtocal-8.x-1.0.zip",
+                "reference": "8.x-1.0",
+                "shasum": "fb726605cf917f095888bf4de82db33c97aaaf90"
             },
             "require": {
                 "drupal/core": "^8 || ^9"
             },
             "type": "drupal-module",
             "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                },
                 "drupal": {
-                    "version": "8.x-1.0+0-dev",
-                    "datestamp": "1590782999",
+                    "version": "8.x-1.0",
+                    "datestamp": "1590783095",
                     "security-coverage": {
-                        "status": "not-covered",
-                        "message": "Dev releases are not covered by Drupal security advisories."
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
                     }
                 }
             },
@@ -1764,8 +1767,7 @@
             "homepage": "https://www.drupal.org/project/addtocal",
             "support": {
                 "source": "https://git.drupalcode.org/project/addtocal"
-            },
-            "time": "2020-05-29T19:51:44+00:00"
+            }
         },
         {
             "name": "drupal/admin_toolbar",
@@ -2143,28 +2145,31 @@
         },
         {
             "name": "drupal/calendar",
-            "version": "dev-1.x",
+            "version": "1.0.0-alpha2",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/calendar.git",
-                "reference": "565defd8255c56b30b4850ff17cfd8e12bae4040"
+                "reference": "8.x-1.0-alpha2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/calendar-8.x-1.0-alpha2.zip",
+                "reference": "8.x-1.0-alpha2",
+                "shasum": "5835cb7a27941f4a144e925114a167954b29d355"
             },
             "require": {
                 "drupal/calendar_datetime": "*",
-                "drupal/core": "^8 || ^9",
+                "drupal/core": "^8",
                 "drupal/views_templates": "1.*"
             },
             "type": "drupal-module",
             "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                },
                 "drupal": {
-                    "version": "8.x-1.0-alpha2+17-dev",
-                    "datestamp": "1590579906",
+                    "version": "8.x-1.0-alpha2",
+                    "datestamp": "1584438256",
                     "security-coverage": {
                         "status": "not-covered",
-                        "message": "Dev releases are not covered by Drupal security advisories."
+                        "message": "Alpha releases are not covered by Drupal security advisories."
                     }
                 }
             },
@@ -2196,29 +2201,25 @@
                 "Drupal"
             ],
             "support": {
-                "source": "https://git.drupalcode.org/project/calendar",
+                "source": "http://cgit.drupalcode.org/calendar",
                 "issues": "https://www.drupal.org/project/issues/calendar"
-            },
-            "time": "2020-05-27T11:44:41+00:00"
+            }
         },
         {
             "name": "drupal/calendar_datetime",
-            "version": "dev-1.x",
+            "version": "1.0.0-alpha2",
             "require": {
                 "drupal/calendar": "self.version",
                 "drupal/core": "~8.0"
             },
             "type": "metapackage",
             "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                },
                 "drupal": {
-                    "version": "8.x-1.0-alpha2+17-dev",
-                    "datestamp": "1590579906",
+                    "version": "8.x-1.0-alpha2",
+                    "datestamp": "1584438256",
                     "security-coverage": {
                         "status": "not-covered",
-                        "message": "Dev releases are not covered by Drupal security advisories."
+                        "message": "Alpha releases are not covered by Drupal security advisories."
                     }
                 }
             },
@@ -3116,27 +3117,39 @@
         },
         {
             "name": "drupal/date_recur",
-            "version": "1.0.0",
+            "version": "2.2.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/date_recur.git",
-                "reference": "8.x-1.0"
+                "reference": "8.x-2.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/date_recur-8.x-1.0.zip",
-                "reference": "8.x-1.0",
-                "shasum": "52ec60e8b9074e3a0beda467ffb148eac1b3fab2"
+                "url": "https://ftp.drupal.org/files/projects/date_recur-8.x-2.2.zip",
+                "reference": "8.x-2.2",
+                "shasum": "187a09837882c772f566e7c2268bb1fe4a8a51ef"
             },
             "require": {
-                "drupal/core": "^8",
+                "drupal/core": "^8.6",
+                "php": "^7.1",
                 "rlanvin/php-rrule": "1.*"
+            },
+            "require-dev": {
+                "dealerdirect/phpcodesniffer-composer-installer": "dev-master",
+                "drupal/coder": "~8.2",
+                "drupal/token": "^1.5",
+                "mglaman/phpstan-drupal": "^0.11.12",
+                "phpstan/phpstan": "^0.11.19",
+                "phpstan/phpstan-deprecation-rules": "^0.11.2"
+            },
+            "suggest": {
+                "drupal/date_recur_interactive": "Provides an interactive recurring date widget."
             },
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-1.0",
-                    "datestamp": "1537700880",
+                    "version": "8.x-2.2",
+                    "datestamp": "1589541426",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -3157,7 +3170,7 @@
                     "homepage": "https://www.drupal.org/user/81431"
                 }
             ],
-            "description": "Recurring date field.",
+            "description": "Recurring Dates Field",
             "homepage": "https://www.drupal.org/project/date_recur",
             "keywords": [
                 "Drupal"
@@ -8570,16 +8583,10 @@
         {
             "name": "harvesthq/chosen",
             "version": "v1.8.7",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/harvesthq/chosen-package.git",
-                "reference": "ad86732b668627c131e61ee8f0e6e9ed52e4db8d"
-            },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/harvesthq/chosen-package/zipball/ad86732b668627c131e61ee8f0e6e9ed52e4db8d",
-                "reference": "ad86732b668627c131e61ee8f0e6e9ed52e4db8d",
-                "shasum": ""
+                "url": "https://github.com/harvesthq/chosen/releases/download/v1.8.7/chosen_v1.8.7.zip",
+                "reference": "ad86732b668627c131e61ee8f0e6e9ed52e4db8d"
             },
             "type": "library",
             "notification-url": "https://packagist.org/downloads/",
@@ -14724,9 +14731,6 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "drupal/addtocal": 20,
-        "drupal/calendar": 20,
-        "drupal/date_recur": 15,
         "drupal/geocoder": 15
     },
     "prefer-stable": true,
