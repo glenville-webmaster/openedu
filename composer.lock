@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d64195b7d3f0c0a646ac1f3c750f1d41",
+    "content-hash": "eb94fe1bad5088b2d58bf9d4639aadfe",
     "packages": [
         {
             "name": "acquia/lightning",
@@ -7931,17 +7931,17 @@
         },
         {
             "name": "drupal/webform",
-            "version": "5.15.0",
+            "version": "5.14.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/webform.git",
-                "reference": "8.x-5.15"
+                "reference": "8.x-5.14"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/webform-8.x-5.15.zip",
-                "reference": "8.x-5.15",
-                "shasum": "b0c48158db62818d1e31353bacc485ccf6c3086d"
+                "url": "https://ftp.drupal.org/files/projects/webform-8.x-5.14.zip",
+                "reference": "8.x-5.14",
+                "shasum": "0ec86f452b161a3fb465612123bb75de97378176"
             },
             "require": {
                 "drupal/core": "^8"
@@ -7951,10 +7951,10 @@
                 "drupal/bootstrap": "~3.0",
                 "drupal/captcha": "~1.0",
                 "drupal/chosen": "~2.0",
-                "drupal/devel": "~3.0",
-                "drupal/entity_print": "~2.0",
+                "drupal/devel": "*",
+                "drupal/entity_print": "*",
                 "drupal/gnode": "*",
-                "drupal/group": "~1.0",
+                "drupal/group": "*",
                 "drupal/lingotek": "~2.0",
                 "drupal/mailsystem": "~4.0",
                 "drupal/paragraphs": "~1.0",
@@ -7962,7 +7962,7 @@
                 "drupal/smtp": "~1.0",
                 "drupal/styleguide": "~1.0",
                 "drupal/telephone_validation": "~2.0",
-                "drupal/token": "~1.0",
+                "drupal/token": "*",
                 "drupal/webform_access": "*",
                 "drupal/webform_attachment": "*",
                 "drupal/webform_devel": "*",
@@ -7977,8 +7977,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-5.15",
-                    "datestamp": "1590971702",
+                    "version": "8.x-5.14",
+                    "datestamp": "1590950034",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
