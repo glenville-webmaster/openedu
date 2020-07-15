@@ -18,7 +18,7 @@
         "drupal/address": "^1.8",
         "drupal/addtoany": "^1.14",
         "drupal/addtocal": "^1.0",
-        "drupal/admin_toolbar": "^1.27",
+        "drupal/admin_toolbar": "^1.27 || ^2.0",
         "drupal/better_exposed_filters": "^4.0",
         "drupal/better_normalizers": "~1.0",
         "drupal/calendar": "^1.0",
