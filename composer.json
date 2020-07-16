@@ -29,6 +29,7 @@
         "drupal/field_group": "^3.1",
         "drupal/flexible_layout": "^1.0",
         "drupal/flickity": "^2.2",
+        "drupal/geocoder": "^3.0",
         "drupal/google_analytics": "^3.1",
         "drupal/google_analytics_reports": "~3.0",
         "drupal/google_map_field": "^1.12",
@@ -44,6 +45,7 @@
         "drupal/views_block_filter_block": "~1.0",
         "drupal/webform": "^5.17",
         "drupal/yoast_seo": "~2.0",
+        "geocoder-php/google-maps-provider": "^4.5",
         "harvesthq/chosen": "^1.8"
     },
     "config": {

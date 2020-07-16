@@ -16,7 +16,7 @@ dependencies:
   - field
   - file
   - flickity_views
-#  - geocoder
+  - geocoder
   - google_map_field
   - image
   - link
