@@ -73,55 +73,55 @@ function openedu_events_form_alter(&$form, FormStateInterface $form_state, $form
 function openedu_events_node_presave(EntityInterface $node) {
   // Autogenerate Get Directions and Map using the Geocoder module for each
   // event on save.
-  if ($node->getType() == 'event') {
-    $address_value = $node->get('field_event_location')->getValue();
-    $map_field = $node->get('field_events_event_map');
+  //if ($node->getType() == 'event') {
+    //$address_value = $node->get('field_event_location')->getValue();
+    //$map_field = $node->get('field_events_event_map');
 
-    if ($address_value && $map_field) {
-      $plugins = ['googlemaps'];
-      $address_components = array_filter($address_value[0], function ($component) {
-        return !empty($component);
-      });
-      $address = implode(', ', $address_components);
-      $config = \Drupal::service('config.factory')->get('google_map_field.settings');
-      $apikey = $config->get('google_map_field_apikey');
+    //if ($address_value && $map_field) {
+      //$plugins = ['googlemaps'];
+      //$address_components = array_filter($address_value[0], function ($component) {
+        //return !empty($component);
+      //});
+      //$address = implode(', ', $address_components);
+      //$config = \Drupal::service('config.factory')->get('google_map_field.settings');
+      //$apikey = $config->get('google_map_field_apikey');
 
-      if (empty($apikey)) {
-        drupal_set_message(t('You must set a Google Map API key and resave this event for the map to be set.'));
-        return;
-      }
+      //if (empty($apikey)) {
+        //drupal_set_message(t('You must set a Google Map API key and resave this event for the map to be set.'));
+        //return;
+      //}
 
-      $options = ['googlemaps' => ['apiKey' => $apikey, 'useSsl' => TRUE]];
+      //$options = ['googlemaps' => ['apiKey' => $apikey, 'useSsl' => TRUE]];
 
       // Get the Long Lat and store in the Map field.
-      if ($addressCollection = \Drupal::service('geocoder')
-        ->geocode($address, $plugins, $options)) {
-        $address = $addressCollection->get(0);
-        $bounds = $address->getBounds();
-        $map_values = [
-          [
-            'lat' => $bounds->getNorth(),
-            'lon' => $bounds->getEast(),
-            'zoom' => 14,
-            'type' => 'roadmap',
-            'height' => '300px',
-            'marker' => '1',
-            'controls' => '1',
-            'infowindow' => '',
-            'actions' => [],
-          ],
-        ];
-        $get_directions = [
-          'title' => t('Get directions'),
-          'uri' => 'https://maps.google.com?daddr=' . urlencode(implode('+', $address_components)),
-        ];
-        $node->set('field_events_event_map', $map_values);
-        $node->set('field_event_directions', [$get_directions]);
-      }
-      else {
-        $node->set('field_events_event_map', []);
-        $node->set('field_event_directions', []);
-      }
-    }
-  }
+      //if ($addressCollection = \Drupal::service('geocoder')
+      //  ->geocode($address, $plugins, $options)) {
+      //  $address = $addressCollection->get(0);
+      //  $bounds = $address->getBounds();
+      //  $map_values = [
+      //    [
+      //      'lat' => $bounds->getNorth(),
+      //      'lon' => $bounds->getEast(),
+      //      'zoom' => 14,
+      //      'type' => 'roadmap',
+      //      'height' => '300px',
+      //      'marker' => '1',
+      //      'controls' => '1',
+      //      'infowindow' => '',
+      //      'actions' => [],
+      //    ],
+      //  ];
+      //  $get_directions = [
+      //    'title' => t('Get directions'),
+      //    'uri' => 'https://maps.google.com?daddr=' . urlencode(implode('+', $address_components)),
+      //  ];
+      //  $node->set('field_events_event_map', $map_values);
+      //  $node->set('field_event_directions', [$get_directions]);
+      //}
+      //else {
+      //  $node->set('field_events_event_map', []);
+      //  $node->set('field_event_directions', []);
+      //}
+    //}
+  //}
 }
