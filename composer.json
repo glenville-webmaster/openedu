@@ -122,7 +122,6 @@
                 "Page title empty": "https://www.drupal.org/files/issues/2018-03-19/panels--page_title_does_not_display--2869412-27.patch",
                 "2868828 - Support dynamic layout": "https://www.drupal.org/files/issues/2868828-dynamic-layout-plugin-definition-2.patch",
                 "2921415 - Use region labels for IPE": "https://www.drupal.org/files/issues/use_labels-2921415-2.patch",
-                "2930835 - Use Subformstate on settings form": "https://www.drupal.org/files/issues/2930835-subformstate-2.patch",
                 "500 errors": "https://www.drupal.org/files/issues/panels-ipe-moderation-2919054-23.patch"
             },
             "drupal/panelizer": {
