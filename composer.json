@@ -22,7 +22,7 @@
         "drupal/better_exposed_filters": "^4.0",
         "drupal/better_normalizers": "~1.0",
         "drupal/calendar": "^1.0",
-        "drupal/chosen": "^3.0",
+        "drupal/chosen": "^2.0",
         "drupal/date_recur": "^2.2",
         "drupal/default_content": "~2.0",
         "drupal/facets": "^1.4",
