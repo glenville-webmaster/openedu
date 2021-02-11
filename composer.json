@@ -19,7 +19,7 @@
         "drupal/addtoany": "^1.14",
         "drupal/addtocal": "^1.0",
         "drupal/admin_toolbar": "^2.0",
-        "drupal/better_exposed_filters": "5.0-beta1",
+        "drupal/better_exposed_filters": "^4.0",
         "drupal/better_normalizers": "~1.0",
         "drupal/calendar": "^1.0",
         "drupal/chosen": "^3.0",
