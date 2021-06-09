@@ -6,12 +6,12 @@
     "minimum-stability": "dev",
     "prefer-stable": true,
     "require-dev": {
-        "drupal/coder": "~8.2.0",
-        "phing/phing": "^2.14",
-        "drupal/devel": "^1.0",
-        "squizlabs/php_codesniffer": "~2.0",
+        "drupal/coder": " ~8.3.0",
         "drupal/console": "^1.7",
-        "drush/drush": "^9.2"
+        "drupal/devel": "^4.0",
+        "drush/drush": "^10.5",
+        "phing/phing": "^2.14",
+        "squizlabs/php_codesniffer": " ^3.0"
     },
     "require": {
         "acquia/lightning": "~4.1.11",
@@ -28,7 +28,7 @@
         "drupal/facets": "^1.7",
         "drupal/field_group": "^3.1",
         "drupal/flexible_layout": "^1.0",
-        "drupal/flickity": "^2.2",
+        "drupal/flickity": "^3.0@alpha",
         "drupal/geocoder": "^3.0",
         "drupal/google_analytics": "^3.1",
         "drupal/google_analytics_reports": "~3.0",
@@ -73,7 +73,7 @@
                     "type": "zip"
                 },
                 "require": {
-                    "composer/installers": "^1.10.0"
+                    "composer/installers": "^1.11"
                 }
             }
         }
