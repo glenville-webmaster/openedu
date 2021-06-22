@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "3bd7b02e6c6db54028342fbb930bb54c",
+    "content-hash": "31f3a0ec05aaa1500ed3c290faf19040",
     "packages": [
         {
             "name": "acquia/lightning",
@@ -7657,51 +7657,6 @@
             "homepage": "https://www.drupal.org/project/obfuscate_email",
             "support": {
                 "source": "https://git.drupalcode.org/project/obfuscate_email"
-            }
-        },
-        {
-            "name": "drupal/sa11y",
-            "version": "1.0.0",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupalcode.org/project/sa11y.git",
-                "reference": "8.x-1.0"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/sa11y-8.x-1.0.zip",
-                "reference": "8.x-1.0",
-                "shasum": "4bf5b900e03bdd1d4934d58e1cc729d6795bc5ae"
-            },
-            "require": {
-                "drupal/core": "^8 || ^9",
-                "drupal/simple_sitemap": "*"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "drupal": {
-                    "version": "8.x-1.0",
-                    "datestamp": "1589997315",
-                    "security-coverage": {
-                        "status": "covered",
-                        "message": "Covered by Drupal's security advisory policy"
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "b_sharpe",
-                    "homepage": "https://www.drupal.org/user/2512258"
-                }
-            ],
-            "description": "Processes accessibility results into reports and on-screen helpers.",
-            "homepage": "https://www.drupal.org/project/sa11y",
-            "support": {
-                "source": "https://git.drupalcode.org/project/sa11y"
             }
         },
         {
