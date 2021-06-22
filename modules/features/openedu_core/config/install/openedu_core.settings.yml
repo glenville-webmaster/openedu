@@ -105,16 +105,6 @@ flickity_default:
 flexible_layout:
   bootstrap:
     enabled: 1
-sa11y:
-  api_server: 'https://www.sa11y.me'
-  api_key: ''
-  rules:
-    wcag2a: wcag2a
-    wcag2aa: wcag2aa
-    section508: '0'
-    best-practice: '0'
-    experimental: '0'
-  frequency: 1
 simple_sitemap:
   settings:
     max_links: 2000

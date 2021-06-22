@@ -45,7 +45,8 @@
         "drupal/webform": "^6.0",
         "drupal/yoast_seo": "~2.0",
         "geocoder-php/google-maps-provider": "^4.6",
-        "harvesthq/chosen": "^1.8.7"
+        "harvesthq/chosen": "^1.8.7",
+        "drupal/sa11y": "^1.0"
     },
     "config": {
         "platform": {

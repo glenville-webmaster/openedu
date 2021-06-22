@@ -34,13 +34,6 @@
             event.preventDefault();
             event.stopPropagation();
 
-            //Close existing accessibility issue tabs
-            $("div.sa11y-tip").each( function(){
-              $(this).fadeOut('400', function () {
-                $(this).remove();
-              });
-            });
-
             var $this = $(this);
 
             // Just close it

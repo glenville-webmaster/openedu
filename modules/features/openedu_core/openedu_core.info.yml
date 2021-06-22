@@ -31,4 +31,3 @@ dependencies:
   - views
   - webform_ui
   - webform_bootstrap
-  - sa11y

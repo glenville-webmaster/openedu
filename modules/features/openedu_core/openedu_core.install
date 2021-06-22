@@ -79,11 +79,6 @@ function openedu_core_install() {
   $simple_sitemap_custom = array_merge($simple_sitemap->get(), $openedu_config->get('simple_sitemap.custom'));
   $simple_sitemap->setData($simple_sitemap_custom)->save();
 
-  // Sa11y.
-  $sa11y = $config->getEditable('sa11y.settings');
-  $sa11y_settings = array_merge($sa11y->get(), $openedu_config->get('sa11y'));
-  $sa11y->setData($sa11y_settings)->save();
-
   // user.role.anonymous.
   $anon_perms = $config->getEditable('user.role.anonymous');
   $anon_settings = array_merge($anon_perms->get(), $openedu_config->get('user_role_anonymous'));
