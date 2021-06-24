@@ -1,7 +1,7 @@
 name: 'OpenEDU Search'
 description: 'Provides content types and related configuration.'
 type: module
-core: 8.x
+core_version_requirement: ^8 || ^9
 version: '8.x-3.x'
 dependencies:
   - views_block_filter_block

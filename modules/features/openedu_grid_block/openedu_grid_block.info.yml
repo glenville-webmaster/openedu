@@ -1,7 +1,7 @@
 name: 'OpenEDU Grid Block'
 description: 'A custom block type used for outputting custom content in a grid format'
 type: module
-core: 8.x
+core_version_requirement: ^8 || ^9
 version: '8.x-3.x'
 dependencies:
   - block_content

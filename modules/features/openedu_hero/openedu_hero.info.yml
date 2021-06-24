@@ -1,7 +1,7 @@
 name: 'OpenEDU Hero'
 description: 'Custom block type for Hero Banners'
 type: module
-core: 8.x
+core_version_requirement: ^8 || ^9
 version: '8.x-3.x'
 package: OpenEDU
 dependencies:
