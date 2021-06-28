@@ -102,9 +102,6 @@ flickity_default:
     free_scroll_friction: 0.075
     prev_next_buttons: true
     page_dots: false
-flexible_layout:
-  bootstrap:
-    enabled: 1
 simple_sitemap:
   settings:
     max_links: 2000

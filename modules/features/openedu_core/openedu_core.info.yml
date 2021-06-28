@@ -14,7 +14,6 @@ dependencies:
   - file
   - filter
   - flickity
-  - flexible_layout
   - lightning_core
   - lightning_page
   - lightning_layout
