@@ -15,9 +15,8 @@ via your web browser like any other drupal installation.
 You must provide a valid maps api key to utilize the google mapping features used within OpenEDU. You can find 
 the configuration at `/admin/config/services/gmap-field-settings`
 
-#### Flexible Layout
-To enable Bootstrap (or css grid) support, navigate to `/admin/config/content/flexible_layout`. For bootstrap, 
-you can just enter the path to the theme css, i.e. http://yoursite.com/profiles/contrib/openedu/themes/oedu_sub/css/style.css
+#### Layout Builder
+While not entirely feature complete, usage of Bootstrap is recommended to be used with Layout Builder and the [Bootstrap Layout Builder](https://www.drupal.org/project/bootstrap_layout_builder) module.
 
 #### IXM Dashboard
 The IXM Dashboard is enabled on install, but has a few requirements to be functional after installation of OpenEDU.
@@ -30,8 +29,7 @@ The IXM Dashboard is enabled on install, but has a few requirements to be functi
   - SEO Data will populate once the "Focus Keyword" has been entered on content.
 
 - **Accessibility**
-  - Accessibility checking is done using the [Sa11y](https://www.drupal.org/project/sa11y) module. Follow the directions
-  on the project page to obtain an API Key.
+  - Accessibility checking is recommended to be done using the [Editoria11y](https://www.drupal.org/project/editoria11y) module. This module is not installed with this project, but it is recommended.
 
 ## PHP Performance
 The sample content contained in the OpenEDU distribution (and enabled by default) is quite large, you may 

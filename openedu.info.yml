@@ -24,7 +24,6 @@ install:
   - chosen_field
   - google_analytics
   - ixm_dashboard_user
-  - ixm_dashboard_sa11y
   - ixm_dashboard_analytics
   - ixm_dashboard_seo
   - openedu_core
