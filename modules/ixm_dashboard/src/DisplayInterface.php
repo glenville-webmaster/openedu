@@ -3,13 +3,13 @@
 namespace Drupal\ixm_dashboard;
 
 use Drupal\Component\Plugin\PluginInspectionInterface;
-use Drupal\Component\Plugin\ConfigurablePluginInterface;
+use Drupal\Component\Plugin\ConfigurableInterface;
 use Drupal\Core\Form\FormStateInterface;
 
 /**
  * Defines an interface for DashboardDisplay plugins.
  */
-interface DisplayInterface extends ConfigurablePluginInterface, PluginInspectionInterface {
+interface DisplayInterface extends ConfigurableInterface, PluginInspectionInterface {
 
   /**
    * Returns the id of this plugin.
