@@ -257,7 +257,7 @@ function ixm_dashboard_is_excluded() {
 
   // Convert path to lowercase. This allows comparison of the same path
   // with different case. Ex: /Page, /page, /PAGE.
-  $pages = Unicode::strtolower($exclusions);
+  $pages = mb_strtolower($exclusions);
   if (!$pages) {
     return FALSE;
   }
@@ -267,7 +267,7 @@ function ixm_dashboard_is_excluded() {
   $path = \Drupal::service('path.current')->getPath($request);
   // Do not trim a trailing slash if that is the complete path.
   $path = $path === '/' ? $path : rtrim($path, '/');
-  $path_alias = Unicode::strtolower(\Drupal::service('path_alias.manager')->getAliasByPath($path));
+  $path_alias = mb_strtolower(\Drupal::service('path_alias.manager')->getAliasByPath($path));
 
   $path_matcher = \Drupal::service('path.matcher');
 
