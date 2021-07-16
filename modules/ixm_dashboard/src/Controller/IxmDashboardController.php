@@ -123,7 +123,7 @@ class IxmDashboardController extends ControllerBase {
     else {
       // Get the current alias.
       $path = \Drupal::service('path.current')->getPath();
-      $alias = \Drupal::service('path.alias_manager')->getAliasByPath($path);
+      $alias = \Drupal::service('path_alias.manager')->getAliasByPath($path);
 
       // Get all the active displays and compare path.
       $displays = $this->displayHelper->getDisplaysByStatus();

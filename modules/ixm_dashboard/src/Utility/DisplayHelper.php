@@ -192,7 +192,7 @@ class DisplayHelper {
       $path = \Drupal::service('path.current')->getPath();
     }
 
-    $alias = \Drupal::service('path.alias_manager')->getAliasByPath($path);
+    $alias = \Drupal::service('path_alias.manager')->getAliasByPath($path);
     foreach ($this->displays as $id => $definition) {
       if (isset($definition['alias']) && $definition['alias'] == $alias) {
         return TRUE;

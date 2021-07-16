@@ -4,7 +4,7 @@ namespace Drupal\ixm_dashboard_analytics\Plugin\ixm_dashboard\Display;
 
 use Drupal\Component\Serialization\Json;
 use Drupal\Core\Form\FormStateInterface;
-use Drupal\Core\Path\AliasManagerInterface;
+use Drupal\path_alias\AliasManager;
 use Drupal\Core\Plugin\ContainerFactoryPluginInterface;
 use Drupal\Core\StringTranslation\StringTranslationTrait;
 use Drupal\ixm_dashboard\DisplayBase;
@@ -74,7 +74,7 @@ class Analytics extends DisplayBase implements ContainerFactoryPluginInterface, 
   /**
    * Constructor.
    */
-  public function __construct(array $configuration, $plugin_id, $plugin_definition, AliasManagerInterface $aliasManager) {
+  public function __construct(array $configuration, $plugin_id, $plugin_definition, AliasManager $aliasManager) {
     parent::__construct($configuration, $plugin_id, $plugin_definition);
 
     $this->settings = $this->getSettings();
@@ -110,7 +110,7 @@ class Analytics extends DisplayBase implements ContainerFactoryPluginInterface, 
       $configuration,
       $plugin_id,
       $plugin_definition,
-      $container->get('path.alias_manager')
+      $container->get('path_alias.manager')
     );
   }
 

@@ -351,7 +351,7 @@ class Seo extends DisplayBase implements ContainerFactoryPluginInterface, Displa
     $results = $query->execute()->fetchAll();
 
     $top_five = [];
-    $alias_manager = \Drupal::service('path.alias_manager');
+    $alias_manager = \Drupal::service('path_alias.manager');
     $count = 0;
     foreach ($results as $result) {
 
