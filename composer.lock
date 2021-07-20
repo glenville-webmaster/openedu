@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "a272b63078a6bf90b2e45e90b8ac38c0",
+    "content-hash": "ae8e5631f004bfd4a44b2bcb24ba651f",
     "packages": [
         {
             "name": "acquia/lightning",
@@ -1801,33 +1801,29 @@
         },
         {
             "name": "drupal/addtocal",
-            "version": "2.0.0-beta3",
+            "version": "1.1.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/addtocal.git",
-                "reference": "8.x-2.0-beta3"
+                "reference": "8.x-1.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/addtocal-8.x-2.0-beta3.zip",
-                "reference": "8.x-2.0-beta3",
-                "shasum": "149d0cab29cb1edeee3ff5f9005d0a135afc7559"
+                "url": "https://ftp.drupal.org/files/projects/addtocal-8.x-1.1.zip",
+                "reference": "8.x-1.1",
+                "shasum": "a11cb06aef8ad5a15650bc6da10202dd68b91e4a"
             },
             "require": {
-                "drupal/core": "^8 || ^9",
-                "spatie/calendar-links": "^1.4"
-            },
-            "suggest": {
-                "drupal/token": "Enables addtocal token ui and field tokens."
+                "drupal/core": "^8 || ^9"
             },
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-2.0-beta3",
-                    "datestamp": "1607099904",
+                    "version": "8.x-1.1",
+                    "datestamp": "1599145268",
                     "security-coverage": {
-                        "status": "not-covered",
-                        "message": "Beta releases are not covered by Drupal security advisories."
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
                     }
                 }
             },
@@ -1865,11 +1861,10 @@
                     "homepage": "https://www.drupal.org/user/3181097"
                 }
             ],
-            "description": "Drupal field formatter providing Add to Calendar links.",
+            "description": "A field formatter providing a widget for exporting events to various formats.",
             "homepage": "https://www.drupal.org/project/addtocal",
             "support": {
-                "source": "https://git.drupalcode.org/project/addtocal",
-                "issues": "https://www.drupal.org/project/issues/addtocal"
+                "source": "https://git.drupalcode.org/project/addtocal"
             }
         },
         {
@@ -4034,56 +4029,6 @@
             "support": {
                 "source": "https://git.drupalcode.org/project/field_group",
                 "issues": "https://www.drupal.org/project/issues/field_group"
-            }
-        },
-        {
-            "name": "drupal/flickity",
-            "version": "3.0.0-alpha1",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupalcode.org/project/flickity.git",
-                "reference": "3.0.0-alpha1"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/flickity-3.0.0-alpha1.zip",
-                "reference": "3.0.0-alpha1",
-                "shasum": "3425fc5cc6827233901c1506e35bd5890ff8df88"
-            },
-            "require": {
-                "drupal/core": "^8 || ^9"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "drupal": {
-                    "version": "3.0.0-alpha1",
-                    "datestamp": "1620660336",
-                    "security-coverage": {
-                        "status": "not-covered",
-                        "message": "Alpha releases are not covered by Drupal security advisories."
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "Nicholas James (swim)",
-                    "homepage": "https://www.drupal.org/u/swim",
-                    "role": "Maintainer"
-                },
-                {
-                    "name": "swim",
-                    "homepage": "https://www.drupal.org/user/1968266"
-                }
-            ],
-            "description": "Provides Flickity library integration with Drupal.",
-            "homepage": "https://drupal.org/project/flickity",
-            "support": {
-                "source": "https://git.drupalcode.org/project/flickity",
-                "issues": "https://drupal.org/project/issues/flickity"
             }
         },
         {
@@ -11345,64 +11290,6 @@
             "time": "2020-07-07T18:42:57+00:00"
         },
         {
-            "name": "spatie/calendar-links",
-            "version": "1.6.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/spatie/calendar-links.git",
-                "reference": "aa984fb84d218cc8962b8f89ef46437298534c24"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/spatie/calendar-links/zipball/aa984fb84d218cc8962b8f89ef46437298534c24",
-                "reference": "aa984fb84d218cc8962b8f89ef46437298534c24",
-                "shasum": ""
-            },
-            "require": {
-                "php": "^7.4 || ^8.0"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "^9.0",
-                "spatie/phpunit-snapshot-assertions": "^4.0",
-                "vimeo/psalm": "^4.7"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Spatie\\CalendarLinks\\": "src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Sebastian De Deyne",
-                    "email": "sebastian@spatie.be",
-                    "homepage": "https://spatie.be",
-                    "role": "Developer"
-                }
-            ],
-            "description": "Generate add to calendar links for Google, iCal and other calendar systems",
-            "homepage": "https://github.com/spatie/calendar-links",
-            "keywords": [
-                "calendar-links",
-                "spatie"
-            ],
-            "support": {
-                "issues": "https://github.com/spatie/calendar-links/issues",
-                "source": "https://github.com/spatie/calendar-links/tree/1.6.0"
-            },
-            "funding": [
-                {
-                    "url": "https://spatie.be/open-source/support-us",
-                    "type": "custom"
-                }
-            ],
-            "time": "2021-04-22T15:16:31+00:00"
-        },
-        {
             "name": "stack/builder",
             "version": "v1.0.6",
             "source": {
@@ -17343,12 +17230,10 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "drupal/addtocal": 10,
         "drupal/better_exposed_filters": 10,
         "drupal/better_normalizers": 10,
         "drupal/calendar": 15,
         "drupal/default_content": 15,
-        "drupal/flickity": 15,
         "drupal/google_analytics_reports": 5,
         "drupal/name": 5,
         "drupal/yoast_seo": 15

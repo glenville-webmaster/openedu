@@ -27,7 +27,6 @@
         "drupal/default_content": "^2.0@alpha",
         "drupal/facets": "^1.8.0",
         "drupal/field_group": "^3.1.0",
-        "drupal/flickity": "^3.0@alpha",
         "drupal/geocoder": "^3.20.0",
         "drupal/google_analytics": "^3.1.0",
         "drupal/google_analytics_reports": "^3.0@RC",
