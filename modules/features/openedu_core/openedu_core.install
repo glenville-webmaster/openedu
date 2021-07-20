@@ -37,10 +37,10 @@ function openedu_core_install() {
   $flickity_settings = array_merge($flickity->get('settings'), $openedu_config->get('flickity_default.settings'));
   $flickity->set('settings', $flickity_settings)->save();
 
-  // Flexible Layout.
-  $flexible_layout = $config->getEditable('flexible_layout.settings');
-  $flexible_layout_settings = array_merge($flexible_layout->get('bootstrap'), $openedu_config->get('flexible_layout.bootstrap'));
-  $flexible_layout->set('bootstrap', $flexible_layout_settings)->save();
+#  // Flexible Layout.
+#  $flexible_layout = $config->getEditable('flexible_layout.settings');
+#  $flexible_layout_settings = array_merge($flexible_layout->get('bootstrap'), $openedu_config->get('flexible_layout.bootstrap'));
+#  $flexible_layout->set('bootstrap', $flexible_layout_settings)->save();
 
   // Sets the "styles" button on ckeditor for "Rich Text" format.
   $rich_text_format = $config

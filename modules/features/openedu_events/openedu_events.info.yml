@@ -15,7 +15,6 @@ dependencies:
   - facets
   - field
   - file
-  - flickity_views
   - geocoder
   - google_map_field
   - image

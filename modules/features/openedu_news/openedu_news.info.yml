@@ -11,8 +11,6 @@ dependencies:
   - entity_browser
   - field
   - file
-  - flickity_fields
-  - flickity_views
   - image
   - lightning_core
   - lightning_media_image

@@ -13,7 +13,6 @@ dependencies:
   - field
   - file
   - filter
-  - flickity
   - lightning_core
   - lightning_page
   - lightning_layout
