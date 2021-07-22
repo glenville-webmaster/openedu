@@ -17,7 +17,7 @@
         "acquia/lightning": "~5.2.0",
         "drupal/address": "^1.9.0",
         "drupal/addtoany": "^1.15.0",
-        "drupal/addtocal": "^1.0.0",
+        "drupal/addtocal": "^2.0@beta",
         "drupal/admin_toolbar": "^3.0.0",
         "drupal/better_exposed_filters": "^5.0@beta",
         "drupal/better_normalizers": "^1.0@beta",
