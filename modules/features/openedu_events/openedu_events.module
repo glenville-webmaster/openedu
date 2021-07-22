@@ -8,6 +8,7 @@
 use Drupal\Core\Entity\EntityInterface;
 use Drupal\Core\Form\FormStateInterface;
 use Drupal\node\Entity\Node;
+use Drupal\geocoder\Entity\GeocoderProvider;
 
 /**
  * Implements hook_form_FORM_ID_alter().
@@ -78,7 +79,7 @@ function openedu_events_node_presave(EntityInterface $node) {
     $map_field = $node->get('field_events_event_map');
 
     if ($address_value && $map_field) {
-      $plugins = ['googlemaps'];
+      $plugins = [GeocoderProvider::load('googlemaps')];
       $address_components = array_filter($address_value[0], function ($component) {
         return !empty($component);
       });
