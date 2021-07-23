@@ -14,7 +14,7 @@ use Drupal\Core\Session\AccountInterface;
  *
  * @Block(
  *   id = "news_events_widget",
- *   admin_label = @Translation("News & Events Widget"),
+ *   admin_label = @Translation("News Widget"),
  * )
  */
 class NewsWidgetBlock extends BlockBase {
@@ -130,7 +130,7 @@ class NewsWidgetBlock extends BlockBase {
    *   A rendered view.
    */
   protected function getNewsEventsView($block_type = 'news_widget_block', array $filter_values = []) {
-    $view = Views::getView('news_and_events');
+    $view = Views::getView('news');
     $view->setDisplay($block_type);
 
     $filters = $view->display_handler->getOption('filters');

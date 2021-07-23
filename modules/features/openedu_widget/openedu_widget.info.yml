@@ -7,7 +7,6 @@ package: OpenEDU
 dependencies:
   - block
   - facets
-  - flickity_views
   - openedu_news
   - search_api
   - views
