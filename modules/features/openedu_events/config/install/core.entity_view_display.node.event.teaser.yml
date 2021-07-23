@@ -2,7 +2,7 @@ langcode: en
 status: true
 dependencies:
   config:
-    - core.entity_view_mode.node.search_result
+    - core.entity_view_mode.node.teaser
     - field.field.node.event.body
     - field.field.node.event.field_event_audience
     - field.field.node.event.field_event_date
@@ -16,11 +16,10 @@ dependencies:
     - field.field.node.event.field_events_event_map
     - field.field.node.event.field_events_related_events
     - field.field.node.event.panelizer
-    - image.style.thumbnail
+    - image.style.event_teaser
     - node.type.event
   module:
-    - address
-    - addtocal
+    - datetime_range
     - image
     - panelizer
     - text
@@ -31,62 +30,53 @@ third_party_settings:
     custom: false
     allow: false
     default: default
-id: node.event.search_result
+id: node.event.teaser
 targetEntityType: node
 bundle: event
-mode: search_result
+mode: teaser
 content:
   body:
     label: hidden
-    type: text_summary_or_trimmed
-    weight: 3
+    type: text_trimmed
+    weight: 2
     settings:
-      trim_length: 600
+      trim_length: 100
     third_party_settings: {  }
     region: content
   field_event_date:
+    type: daterange_custom
     weight: 1
     label: hidden
     settings:
       timezone_override: ''
-      date_format: 'Y-m-d\TH:i:s'
+      date_format: 'M j, Y ha'
       separator: '-'
-      location:
-        value: field_event_location
-        tokenized: ''
-      description:
-        value: body
-        tokenized: ''
-      past_events: 0
     third_party_settings: {  }
-    type: addtocal_view
     region: content
   field_event_image:
+    type: image
     weight: 0
     label: hidden
     settings:
-      image_style: thumbnail
+      image_style: event_teaser
       image_link: content
     third_party_settings: {  }
-    type: image
     region: content
-  field_event_location:
-    weight: 2
-    label: hidden
+  links:
+    weight: 3
+    region: content
     settings: {  }
     third_party_settings: {  }
-    type: address_default
-    region: content
 hidden:
   addtoany: true
   field_event_audience: true
   field_event_department: true
   field_event_directions: true
   field_event_featured: true
+  field_event_location: true
   field_events_additional_links: true
   field_events_category: true
   field_events_event_map: true
   field_events_related_events: true
-  links: true
   panelizer: true
   scheduled_publication: true

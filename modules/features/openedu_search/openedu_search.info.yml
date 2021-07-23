@@ -7,7 +7,6 @@ dependencies:
   - views_block_filter_block
   - better_exposed_filters
   - openedu_core
-  - openedu_events
   - openedu_news
   - openedu_profile
   - lightning_search

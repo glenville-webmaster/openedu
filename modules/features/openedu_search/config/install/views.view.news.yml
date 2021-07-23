@@ -59,8 +59,6 @@ display:
             'entity:node':
               course: default
               department: default
-              event: default
-              landing_page: default
               news: featured_content
               page: default
               profile: default
@@ -334,8 +332,6 @@ display:
             'entity:node':
               course: default
               department: default
-              event: default
-              landing_page: default
               news: teaser
               page: default
               profile: default

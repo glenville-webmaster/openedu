@@ -12,10 +12,6 @@ dependencies:
     - field.storage.node.field_profile_office
     - field.storage.node.field_profile_type
     - field.storage.node.field_profile_research_interests
-    - field.storage.node.field_events_category
-    - field.storage.node.field_event_date
-    - field.storage.node.field_event_department
-    - field.storage.node.field_event_featured
     - search_api.server.openedu
   module:
     - search_api
@@ -147,46 +143,6 @@ field_settings:
     dependencies:
       config:
         - field.storage.node.field_profile_research_interests
-  field_events_category:
-    label: Category
-    datasource_id: 'entity:node'
-    property_path: field_events_category
-    type: integer
-    dependencies:
-      config:
-        - field.storage.node.field_events_category
-  field_event_date:
-    label: 'Event Date'
-    datasource_id: 'entity:node'
-    property_path: field_event_date
-    type: date
-    dependencies:
-      config:
-        - field.storage.node.field_event_date
-  field_event_department:
-    label: Department
-    datasource_id: 'entity:node'
-    property_path: field_event_department
-    type: integer
-    dependencies:
-      config:
-        - field.storage.node.field_event_department
-  field_event_featured:
-    label: Featured
-    datasource_id: 'entity:node'
-    property_path: field_event_featured
-    type: boolean
-    dependencies:
-      config:
-        - field.storage.node.field_event_featured
-  field_event_date_end_value:
-    label: 'Event Date » End date value'
-    datasource_id: 'entity:node'
-    property_path: 'field_event_date:end_value'
-    type: date
-    dependencies:
-      config:
-        - field.storage.node.field_event_date
   uid:
     label: uid
     datasource_id: 'entity:node'

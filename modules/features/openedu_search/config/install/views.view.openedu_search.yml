@@ -76,8 +76,6 @@ display:
             'entity:node':
               course: search_result
               department: search_result
-              event: search_result
-              landing_page: search_result
               news: search_result
               page: search_result
               profile: search_result
