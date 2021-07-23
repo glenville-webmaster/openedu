@@ -32,8 +32,6 @@ install:
   - openedu_program
   - openedu_news
   - openedu_profile
-  - openedu_story
-  - openedu_events
   - openedu_widget
   - openedu_hero
   - openedu_search

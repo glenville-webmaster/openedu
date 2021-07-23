@@ -14,7 +14,6 @@ dependencies:
   - openedu_core
   - openedu_course
   - openedu_grid_block
-  - openedu_story
   - options
   - panelizer
   - path
