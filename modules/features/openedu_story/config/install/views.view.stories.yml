@@ -6,7 +6,6 @@ dependencies:
     - core.entity_view_mode.node.teaser
     - node.type.story
   module:
-    - flickity_views
     - node
     - user
 id: stories

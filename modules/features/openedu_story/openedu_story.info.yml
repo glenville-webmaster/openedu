@@ -8,8 +8,6 @@ dependencies:
   - entity_browser
   - field
   - file
-  - flickity_fields
-  - flickity_views
   - image
   - menu_ui
   - node
