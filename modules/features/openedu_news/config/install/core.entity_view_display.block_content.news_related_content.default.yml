@@ -19,7 +19,7 @@ content:
       link: false
       flickity_settings: default_group
     third_party_settings: {  }
-    type: flickity_entity_view
+    type: entity_reference_entity_view
     region: content
 hidden:
   scheduled_publication: true

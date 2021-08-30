@@ -6,7 +6,6 @@ dependencies:
     - field.field.block_content.openedu_stories_block.field_stories_title
     - field.field.block_content.openedu_stories_block.field_story_reference
   module:
-    - flickity_fields
 id: block_content.openedu_stories_block.default
 targetEntityType: block_content
 bundle: openedu_stories_block

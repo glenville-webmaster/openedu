@@ -217,7 +217,7 @@ content:
       view_mode: related_content
       link: false
     third_party_settings: {  }
-    type: flickity_entity_view
+    type: entity_reference_entity_view
     region: content
   links:
     weight: 4
