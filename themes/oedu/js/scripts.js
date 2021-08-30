@@ -48,7 +48,11 @@
   Drupal.behaviors.oeduImages = {
     attach: function (context, settings) {
       // Captions for news images.
+      // OLD News Page
       $("article.node--type-news .panel-oedu-container .field--name-field-news-image img", context).addCaption();
+      
+      // Layout Builder News Page
+      $("body.page-node-type-news section.block-field-blocknodenewsfield-news-image div.field--name-field-news-image img", context).addCaption();
 
       // Captions for event images.
       $("article.node--type-event .panel-oedu-container .field--name-field-event-image img", context).addCaption();
